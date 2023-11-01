@@ -6,10 +6,10 @@
 
 body {
     margin: 0 auto;
-    color: #00234B;
+    color: #626262;
     font-family: var(--font1);
-    font-size: 14px;
-    line-height: 1.5;
+    font-size: 16px;
+    line-height: 1.4;
 }
 
 body::-webkit-scrollbar {
@@ -54,7 +54,7 @@ img {
 
 a {
     color: #00234B;
-
+    text-decoration: none;
     &:hover {
         text-decoration: none;
         color: var(--colormain)

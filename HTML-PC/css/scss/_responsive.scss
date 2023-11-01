@@ -64,26 +64,4 @@
     .hidden-pc{
         display: block;
     }
-   .btn-dk{
-       .txt_20 {
-        width: 100%;
-        margin: 0 auto 10px!important;
-        text-align: center;
-       }
-   }
-    .detail_tin {
-        .title-detail{
-            font-size: 20px;
-        }
-        .price-all {
-            .all{
-                font-size: 24px;
-            }
-        }
-    }
-}
-@media (max-width: 375px) {
-    .title-cate{
-        font-size: 22px;
-    }
 }
