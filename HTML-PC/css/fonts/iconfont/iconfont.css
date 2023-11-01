@@ -3,11 +3,11 @@ iconfont Webfont
 */
 @font-face {
 	font-family: 'iconfont';
-	src: url('iconfont.eot?1638111011274');
-	src: url('iconfont.eot?#iefix-1638111011274') format('embedded-opentype'),
-		url('iconfont.woff2?1638111011274') format('woff2'),
-		url('iconfont.woff?1638111011274') format('woff'),
-		url('iconfont.ttf?1638111011274') format('truetype');
+	src: url('iconfont.eot?1698846181402');
+	src: url('iconfont.eot?#iefix-1698846181402') format('embedded-opentype'),
+		url('iconfont.woff2?1698846181402') format('woff2'),
+		url('iconfont.woff?1698846181402') format('woff'),
+		url('iconfont.ttf?1698846181402') format('truetype');
 	font-weight: normal;
 	font-style: normal;
 }
@@ -32,20 +32,68 @@ iconfont Webfont
 /*
 Glyphs list
 */
- .iconfont-cancel:before {
+ .iconfont-bookmark:before {
 			content: '\ea01';
 		}
 
-		 .iconfont-close:before {
+		 .iconfont-briefcase:before {
 			content: '\ea02';
 		}
 
-		 .iconfont-lang:before {
+		 .iconfont-cancel:before {
 			content: '\ea03';
 		}
 
-		 .iconfont-search:before {
+		 .iconfont-close:before {
 			content: '\ea04';
+		}
+
+		 .iconfont-currency_exchange:before {
+			content: '\ea05';
+		}
+
+		 .iconfont-gpp_good:before {
+			content: '\ea06';
+		}
+
+		 .iconfont-group_add:before {
+			content: '\ea07';
+		}
+
+		 .iconfont-lang:before {
+			content: '\ea08';
+		}
+
+		 .iconfont-loan:before {
+			content: '\ea09';
+		}
+
+		 .iconfont-location:before {
+			content: '\ea0a';
+		}
+
+		 .iconfont-office:before {
+			content: '\ea0b';
+		}
+
+		 .iconfont-paid:before {
+			content: '\ea0c';
+		}
+
+		 .iconfont-right:before {
+			content: '\ea0d';
+		}
+
+		 .iconfont-search:before {
+			content: '\ea0e';
+		}
+
+		 .iconfont-signpost:before {
+			content: '\ea0f';
+		}
+
+		 .iconfont-web:before {
+			content: '\ea10';
 		}
 
 		
