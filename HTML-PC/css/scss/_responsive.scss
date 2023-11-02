@@ -2,31 +2,34 @@
     display: none;
 }
 
-@media (min-width: 1400px) {
+@media (min-width: 1366px) {
     .container {
         max-width: 1304px;
     }
 }
 
-@media (max-width: 1399px) {
+@media (max-width: 1304px) {
     .mb80 {
         margin-bottom: 60px;
     }
-    .btn-default{
+    .btn-default {
         font-size: 1rem;
     }
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1199px) {
+    .swiper-button-next {
+        right: 0;
+    }
+    .swiper-button-prev {
+        left: 0;
+    }
     .overflow {
         overflow: hidden;
     }
 }
 
 @media (max-width: 991px) {
-    .overlay {
-        display: none
-    }
     .box_stream {
         width: 100%;
         padding-right: 0

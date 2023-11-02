@@ -342,6 +342,7 @@ input {
     border-radius: 16px;
     padding: 0 30px;
     text-align: center;
+    justify-content: center;
     background: #F9AC4E;
     transition: 0.2s all;
     cursor: pointer;
@@ -433,15 +434,19 @@ input {
     &.white {
         color: #fff;
     }
-    @media (max-width: 1399px) {
+    @media (max-width: 1304px) {
         font-size: px_to_rem(32px);
     }
 }
-.title-cate2{
+
+.title-cate2 {
     font-size: px_to_rem(56px);
     font-weight: 700;
     margin-bottom: 20px;
     color: #17677B;
+    @media (max-width: 1304px) {
+        font-size: px_to_rem(32px);
+    }
 }
 
 .line-bottom {
@@ -1001,5 +1006,3 @@ input {
     font-size: px_to_rem(14px);
     padding: 0 30px;
 }
-
-
