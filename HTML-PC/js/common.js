@@ -59,17 +59,7 @@
     }
     //onCLick
     function onCLick() {
-        $('.auto_search_button').click(function () {
-            $('.search-wrap input').focus();
-            if (!$(this).hasClass('is-clicked')) {
-                $(this).addClass('is-clicked');
-            } else {
-                $(this).removeClass('is-clicked');
-            }
-            $('.search-wrap ').animate({
-                width: 'toggle'
-            });
-        });
+        
         $('#vibeji-ham').off('click').on('click', function () {
             $(this).toggleClass('open');
             $('.main-menu').toggleClass('open');
@@ -114,65 +104,45 @@
 
 
     }
-    //Hover
+    
 
     //slide Gallery
     function swiper() {
-        var swiperBanner = new Swiper(".top-banner .swiper-container", {
+        var swiperDoitac = new Swiper(".section-doi-tac .swiper-container", {
+            slidesPerView: 'auto',
             spaceBetween: 0,
-            loop: false,
-            navigation: {
-                nextEl: ".top-banner .swiper-button-next",
-                prevEl: ".top-banner .swiper-button-prev",
-            },
-            pagination: {
-                el: ".top-banner .swiper-pagination",
-                type: "progressbar",
-            },
-            speed: 1000,
-            effect: 'fade',
+            loop: true,
+            speed: 700,
             autoplay: {
-                delay: 6000,
-                disableOnInteraction: false,
+                delay: 4000,
             },
         });
-        var swiperVideo = new Swiper(".section-video .swiper-container", {
-            spaceBetween: 0,
-            loop: false,
+        var swiperJob = new Swiper(".list-job .swiper-container", {
+            slidesPerView: 4,
+            slidesPerColumn: 2,
+            spaceBetween: 20,
             navigation: {
-                nextEl: ".section-video .swiper-button-next",
-                prevEl: ".section-video .swiper-button-prev",
-            },
-            pagination: {
-                el: ".section-video .swiper-pagination",
-                type: "progressbar",
+                nextEl: '.list-job .swiper-button-next',
+                prevEl: '.list-job .swiper-button-prev',
             },
         });
-        var swiperXemnhieu = new Swiper(".section-xemnhieu .swiper-container", {
+        var slideCongtacvien = new Swiper('#slide-ctv .swiper-container', {
+            spaceBetween: 16,
             slidesPerView: 3,
-            spaceBetween: 36,
             navigation: {
-                nextEl: ".section-xemnhieu .swiper-button-next",
-                prevEl: ".section-xemnhieu .swiper-button-prev",
+                nextEl: '#slide-ctv .swiper-button-next',
+                prevEl: '#slide-ctv .swiper-button-prev',
             },
             pagination: {
-                el: ".section-xemnhieu .swiper-pagination",
-                type: "progressbar",
+                el: "#slide-ctv .swiper-pagination",
+                type: "fraction",
             },
-            breakpoints: {
-                991: {
-                    slidesPerView: 2,
-                },
-                414: {
-                    slidesPerView: 1,
-                    spaceBetween: 16,
-                }
-            }
         });
     }
-
+   
 
     $(function () {
+        AOS.init();
         backToTop();
         scrollBar();
         onCLick();

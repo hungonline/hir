@@ -3,12 +3,14 @@
     padding: 0px;
     box-sizing: border-box
 }
-
+html {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
 body {
     margin: 0 auto;
     color: #626262;
     font-family: var(--font1);
-    font-size: 16px;
     line-height: 1.5;
 }
 
@@ -36,8 +38,8 @@ li {
 }
 
 .icon-svg {
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     fill: currentColor;
     vertical-align: middle;
 }

@@ -43,6 +43,13 @@ $url: "images" !default;
   @include cubic-transition($delay: 0, $duration: 200ms, $property: (all));
 }
 
+@function px_to_rem($target, $context: $base-size) {
+  @if $target==0 {
+      @return 0
+  }
+  @return $target / $context+0rem;
+}
+$base-size: 16px;
 @mixin placeholder {
   &::-webkit-input-placeholder {
     @content

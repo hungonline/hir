@@ -1,239 +1,4 @@
-.top-header {
-    background: #00234B;
-    font-size: 14px;
-    color: rgba(255, 255, 255, 0.65);
-    .container {
-        height: 50px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-    a {
-        color: rgba(255, 255, 255, 0.65);
-    }
-    .left {
-        a {
-            color: #DEDEDE;
-            margin-right: 20px;
-            font-size: 16px;
-        }
-    }
-    .right {
-        display: flex;
-        align-items: center;
-    }
-    .nav {
-        position: relative;
-        li {
-            margin-right: 40px;
-        }
-        .info {
-            position: relative;
-            padding-right: 15px;
-            &::before {
-                content: "";
-                border-left: 4px solid rgba(255, 255, 255, 0);
-                border-right: 4px solid rgba(255, 255, 255, 0);
-                border-top: 5px solid #fff;
-                position: absolute;
-                right: 0;
-                top: 7px;
-            }
-        }
-    }
-    .box-search-pc {
-        display: inline-block;
-        margin-right: 15px;
-        position: relative;
-        button {
-            border: 0;
-            background: none;
-            position: absolute;
-            top: 2px;
-            left: 7px;
-            color: #fff;
-        }
-        input {
-            background: #912D7E;
-            border-radius: 61px;
-            border: 0;
-            font-size: 12px;
-            color: rgba(255, 255, 255, 1);
-            height: 22px;
-            padding: 0 4px 0 30px;
-            width: 160px;
-            @include placeholder {
-                color: rgba(255, 255, 255, .6);
-            }
-        }
-    }
-    .search-btn {
-        cursor: pointer;
-        position: relative;
-        margin-right: 40px;
-        button {
-            border: 0;
-            background: none;
-        }
-        .icon-svg {
-            position: relative;
-            display: block;
-            width: 16px;
-            height: 16px;
-            top: 7px;
-            -webkit-transition-duration: 400ms;
-            transition-duration: 400ms;
-            -webkit-transition-property: all;
-            transition-property: all;
-            -webkit-transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-            transition-timing-function: cubic-bezier(0.7, 1, 0.7, 1);
-        }
-        .close {
-            width: 13px;
-            height: 13px;
-            opacity: 0 !important;
-        }
-        .auto_search_button {
-            &.is-clicked {
-                .icon-svg {
-                    top: -13px;
-                    opacity: 0;
-                }
-                .close {
-                    opacity: 1 !important;
-                    top: -7px;
-                    color: #fff;
-                }
-            }
-        }
-    }
-    .search-wrap {
-        position: absolute;
-        top: -4px;
-        right: 30px;
-        width: 312px;
-        height: 36px;
-        z-index: 2;
-        display: none;
-        background: rgba(255, 255, 255, .1);
-        border-radius: 49px;
-        .container {
-            background: #fff;
-        }
-        input {
-            background: rgba(255, 255, 255, .1);
-            font-size: 14px;
-            height: 36px;
-            width: 100%;
-            outline: 0;
-            border: 0;
-            padding: 0 30px 0 20px;
-            border-radius: 49px;
-            color: #fff;
-            @include placeholder {
-                color: rgba(255, 255, 255, 0.85);
-            }
-        }
-        button {
-            position: absolute;
-            right: 12px;
-            top: 9px;
-            outline: 0;
-            svg {
-                fill: rgba(255, 255, 255, 0.85);
-                top: 2px !important;
-            }
-        }
-    }
-    .languages {
-        position: relative;
-        padding-right: 15px;
-        &::before {
-            content: "";
-            border-bottom: 1px solid rgba(255, 255, 255, 0.65);
-            border-right: 1px solid rgba(255, 255, 255, 0.65);
-            width: 6px;
-            height: 6px;
-            position: absolute;
-            right: 0;
-            top: 7px;
-            transform: rotate(45deg);
-        }
-        svg {
-            width: 13px;
-            height: 13px;
-            margin-right: 2px;
-        }
-    }
-    @media (max-width: 1199px) {
-        .container {
-            height: 40px;
-        }
-    }
-    @media (max-width: 991px) {
-        .nav {
-            li {
-                margin-right: 20px;
-            }
-        }
-        .search-btn {
-            margin-right: 20px;
-        }
-    }
-    @media (max-width: 767px) {
-        position: relative;
-        z-index: 1001;
-        .left {
-            font-size: 0
-        }
-        .nav {
-            display: none;
-        }
-        .box-search-pc {
-            input {
-                width: 120px;
-            }
-        }
-        .search-btn {
-            position: static
-        }
-        .search-wrap {
-            top: 40px;
-            right: 0;
-            height: 53px;
-            width: 100%;
-            box-shadow: 0px 10px 20px rgba(0, 0, 0, .05);
-            background: #fff;
-            border-radius: 0;
-            button {
-                top: 16px
-            }
-            input {
-                height: 53px;
-                background: #fff;
-                border-radius: 0;
-                color: #222;
-                @include placeholder {
-                    color: #222;
-                }
-            }
-        }
-    }
-    @media (max-width: 380px) {
-        .box-search-pc {
-            margin-right: 10px;
-            input {
-                width: 110px;
-            }
-        }
-        .my_user {
-            padding-left: 20px;
-            &::before {
-                left: 10px;
-            }
-        }
-    }
-}
+
 
 .topnav {
     position: sticky;
@@ -247,6 +12,7 @@
     &.sticky {
         background-color: #fff;
         box-shadow: 0 2px 15px rgba(0, 0, 0, .09);
+        
         .main-menu {
             top: 52px;
         }
@@ -342,7 +108,7 @@
                 display: flex;
                 padding: 11px 0;
                 &>a {
-                    font-size: 20px;
+                    font-size: px_to_rem(20px);
                     font-weight: 400;
                     padding-right: 15px;
                     line-height: 40px;
@@ -374,7 +140,7 @@
                         box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
                         a {
                             display: block;
-                            font-size: 15px;
+                            font-size: px_to_rem(15px);
                             padding: 10px;
                             border-bottom: 1px solid #dfdfdf;
                             &:last-child {
@@ -462,12 +228,12 @@
                         width: calc(100% - 56px);
                         padding-left: 24px;
                         h3 {
-                            font-size: 16px;
+                            font-size: px_to_rem(16px);
                             font-weight: bold;
                         }
                         p {
                             color: #555770;
-                            font-size: 13px
+                            font-size: px_to_rem(13px)
                         }
                     }
                 }
@@ -526,7 +292,7 @@
                         width: calc(100% - 40px);
                         padding-left: 15px;
                         h3 {
-                            font-size: 14px;
+                            font-size: px_to_rem(14px);
                             margin-bottom: 0;
                         }
                         p {
@@ -566,7 +332,7 @@
                     }
                     .sub_menu {
                         display: block;
-                        font-size: 22px;
+                        font-size: px_to_rem(22px);
                         width: 40px;
                         text-align: center;
                         line-height: 40px;
@@ -591,11 +357,31 @@
     }
     &.home {
         background: none;
+        &.sticky{
+            background-color: #115061;
+        }
         .logo-dark {
             display: none;
         }
         .logo-white {
             display: block;
+        }
+    }
+    @media (max-width: 1399px) {
+        .right_menu {
+            .btn-default{
+                height: 45px;
+            }
+        }
+        .main-menu {
+            .nav{
+                &>li{
+                    margin-right: 20px;
+                    &>a{
+                        font-size: px_to_rem(18px);
+                    }
+                }
+            }
         }
     }
     @media (max-width: 1199px) {

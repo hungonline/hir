@@ -1,25 +1,25 @@
+.hidden-pc {
+    display: none;
+}
+
 @media (min-width: 1400px) {
     .container {
         max-width: 1304px;
     }
 }
 
-.hidden-pc {
-    display: none;
-}
-
-@media (max-width: 1366px) {
+@media (max-width: 1399px) {
     .mb80 {
         margin-bottom: 60px;
+    }
+    .btn-default{
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 1200px) {
     .overflow {
         overflow: hidden;
-    }
-    .title-cate {
-        font-size: 26px;
     }
 }
 
@@ -34,13 +34,6 @@
     .box_300 {
         width: 100%;
         display: none;
-    }
-    .title-cate {
-        font-size: 24px;
-        margin-bottom: 15px!important;
-        &.mb40 {
-            margin-bottom: 15px!important;
-        }
     }
     .mb80 {
         margin-bottom: 40px!important;
