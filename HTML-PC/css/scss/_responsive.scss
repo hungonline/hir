@@ -4,16 +4,28 @@
 
 @media (min-width: 1366px) {
     .container {
-        max-width: 1304px;
+        max-width: 1310px;
+    }
+    .container-right{
+        padding-left: calc((100% - 1280px)/2);
+    }
+    .container-left{
+        padding-right: calc((100% - 1280px)/2);
     }
 }
 
-@media (max-width: 1304px) {
+@media (max-width: 1310px) {
     .mb80 {
         margin-bottom: 60px;
     }
     .btn-default {
         font-size: 1rem;
+    }
+    .container-right{
+        padding-left: calc((100% - 1110px)/2);
+    }
+    .container-left{
+        padding-right: calc((100% - 1110px)/2);
     }
 }
 

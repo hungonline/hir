@@ -5,6 +5,8 @@
     right: 0;
     z-index: 1000;
     transition: all .2s ease-in-out;
+    border-bottom: 1px solid rgba(107, 119, 154, 0.15);
+    background: #fff;
     &.sticky {
         background-color: #fff;
         box-shadow: 0 2px 15px rgba(0, 0, 0, .09);
@@ -91,6 +93,7 @@
             margin-left: 16px;
             height: 52px;
             padding: 0 28px;
+            font-size: 1rem;
         }
     }
     .main-menu {
@@ -108,7 +111,7 @@
                     display: flex;
                     border-radius: 6px;
                     position: relative;
-                    color: #C2EAF4;
+                    color: #A9A9A9;
                 }
                 .sub_menu {
                     position: relative;
@@ -133,7 +136,7 @@
                         box-shadow: 0 2px 8px rgba(0, 0, 0, .1);
                         a {
                             display: block;
-                            font-size: px_to_rem(15px);
+                            font-size: px_to_rem(18px);
                             padding: 10px;
                             border-bottom: 1px solid #dfdfdf;
                             &:last-child {
@@ -247,8 +250,11 @@
         .logo-white {
             display: block;
         }
+        .main-menu .nav>li .link{
+            color: #C2EAF4;
+        }
     }
-    @media (max-width: 1304px) {
+    @media (max-width: 1310px) {
         .main-menu {
             .nav {
                 &>li {
@@ -382,7 +388,7 @@
                         padding: 0 24px;
                         position: relative;
                         border-radius: 0;
-                        color: #A9A9A9;
+                        color: #A9A9A9!important;
                         font-size: 20px;
                         &::before {
                             display: none;

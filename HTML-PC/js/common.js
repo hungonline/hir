@@ -80,6 +80,22 @@
             $('.main-menu,.overlay,.vibeji-ham').removeClass('open');
         });
 
+        $('.btn-top-ctv').off('click').on('click', function() {
+            $('body').toggleClass('open-ctv');
+        });
+        $('.back-home').off('click').on('click', function() {
+            $('body').removeClass('open-ctv');
+        });
+
+        $(".toggle-password").click(function() {
+            $(this).toggleClass("fa-eye fa-eye-slash");
+            var input = $($(this).attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
 
 
     }
@@ -110,6 +126,11 @@
                 },
                 991: {
                     slidesPerView: 2,
+                },
+                414: {
+                    slidesPerView: 1.2,
+                    slidesPerColumn: 1,
+                    spaceBetween: 16
                 }
             }
         });
@@ -124,7 +145,25 @@
                 el: "#slide-ctv .swiper-pagination",
                 type: "fraction",
             },
+            breakpoints: {
+                991: {
+                    slidesPerView: 2,
+                },
+                414: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 16
+                }
+            }
         });
+        var swiperBannerSign = new Swiper(".slide-banner .swiper-container", {
+            speed: 500,
+            effect: 'fade',
+            pagination: {
+                el: ".slide-banner .swiper-pagination",
+                clickable: true,
+            },
+        });
+        
     }
 
 
