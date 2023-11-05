@@ -6,6 +6,7 @@
     z-index: 1000;
     transition: all .2s ease-in-out;
     background: #fff;
+    border-bottom: 1px solid rgba(107, 119, 154, 0.15);
     &.sticky {
         background-color: #fff;
         border-bottom: 1px solid rgba(107, 119, 154, 0.15);
@@ -48,7 +49,7 @@
             position: absolute;
             height: 3px;
             width: 100%;
-            background: #fff;
+            background: #17677B;
             border-radius: 2px;
             opacity: 1;
             right: 0;
@@ -246,14 +247,22 @@
     }
     &.home {
         background: none;
+        border-bottom: 0;
         &.sticky {
             background-color: #115061;
+            border-bottom: 1px solid rgba(107, 119, 154, 0.15);
+            box-shadow: 0 2px 15px rgba(0, 0, 0, .09);
         }
         .logo-dark {
             display: none;
         }
         .logo-white {
             display: block;
+        }
+        .vibeji-ham {
+            span {
+                background: #fff;
+            }
         }
         .main-menu .nav>li .link {
             color: #C2EAF4;

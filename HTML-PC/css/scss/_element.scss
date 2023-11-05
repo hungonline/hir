@@ -2,6 +2,7 @@
     padding-top: 128px;
     padding-bottom: 40px;
     background: url(images/graphics/bg-top.jpg) bottom right;
+    background-size: cover;
     color: #C2EAF4;
     margin-top: -108px;
     position: relative;
@@ -16,7 +17,7 @@
     &__right {
         width: 620px;
         position: absolute;
-        right: -20px;
+        right: -70px;
         top: 0;
         .back-home {
             background: rgba(71, 191, 221, 0.20);
@@ -98,9 +99,30 @@
         background-repeat: no-repeat;
         background-position: right 30px center;
     }
+    @media (max-width: 1600px) {
+        &__right {
+            right: -20px;
+            top: 20px;
+        }
+    }
+    @media (max-width: 1440px) {
+        &__right {
+            right: 20px;
+            top: 40px;
+        }
+    }
+    @media (max-width: 1366px) {
+        &__right {
+            right: 60px;
+        }
+    }
     @media (max-width: 1310px) {
         &__left {
             margin-top: 70px;
+        }
+        &__right {
+            right: -20px;
+            top: 10px;
         }
         .content {
             .lbl {
@@ -123,19 +145,30 @@
         padding-top: 150px;
         &__left {
             margin-top: 40px;
-            padding-right: 15px
+            padding-right: 15px;
+            width: calc(100% - 500px);
         }
         &__right {
-            right: 0;
+            right: -50px;
+            top: -20px;
         }
         .new-post {
             max-width: 700px;
             width: 100%;
         }
     }
+    @media (max-width: 1025px) {
+        &__left {
+            width: calc(100% - 576px);
+        }
+        &__right {
+            right: 20px;
+        }
+    }
     @media (max-width: 991px) {
         .flex.mb80 {
             min-height: auto;
+            padding-bottom: 30px;
         }
         &__left {
             margin-top: 0;
@@ -150,7 +183,6 @@
             height: 100%;
             background: url(images/graphics/bg-top.jpg) bottom center;
             padding-top: 80px;
-            // overflow-y: scroll;
             color: #4d4d4d;
             -webkit-transition: all .25s ease-in-out;
             transition: all .25s ease-in-out;
@@ -158,6 +190,24 @@
             .back-home {
                 display: block;
             }
+            .top-ctv {
+                height: 520px;
+                width: 600px;
+                margin: 0 auto;
+            }
+        }
+        .bg-btn {
+            display: block;
+        }
+        .new-post {
+            display: none;
+        }
+    }
+    @media (max-width: 600px) {
+        background: url(images/graphics/m_bg-top.jpg) bottom right;
+        min-height: 100vh;
+        &__right {
+            background: url(images/graphics/m_bg-top.jpg) bottom right;
             .top-ctv {
                 background: url(images/graphics/m_bg-ctv.png) no-repeat center top;
                 height: 600px;
@@ -182,19 +232,6 @@
                     }
                 }
             }
-        }
-        .bg-btn {
-            display: block;
-        }
-        .new-post {
-            display: none;
-        }
-    }
-    @media (max-width: 500px) {
-        background: url(images/graphics/m_bg-top.jpg) bottom right;
-        min-height: 100vh;
-        &__right {
-            background: url(images/graphics/m_bg-top.jpg) bottom right;
         }
     }
 }
@@ -477,6 +514,10 @@ body.open-ctv {
 .list-job-vertical {
     .scrollbar-height {
         max-height: 1440px;
+        @media (max-width: 991px) {
+            max-height: 100%;
+            padding-right: 0;
+        }
     }
 }
 
@@ -624,7 +665,6 @@ body.open-ctv {
     }
     @media (max-width: 1199px) {
         min-height: 360px;
-        &.bonus {}
         .grid {
             column-gap: 30px;
             row-gap: 30px;
@@ -645,7 +685,7 @@ body.open-ctv {
         .text-content {
             padding-left: 55%;
             padding-right: 30px;
-            margin-top: 180px;
+            margin-top: 140px;
         }
     }
     @media (max-width: 991px) {
@@ -690,6 +730,14 @@ body.open-ctv {
                     font-size: px_to_rem(40px);
                 }
             }
+        }
+        &.bonus {
+            background: url(images/graphics/m_bg-bonus2.png) no-repeat;
+        }
+        .text-content {
+            padding-left: 20px;
+            padding-right: 20px;
+            margin-top: 280px;
         }
     }
 }
@@ -773,7 +821,7 @@ body.open-ctv {
     .pt-8 {
         padding-top: 80px;
     }
-    @media (max-width: 1310px) {
+    @media (max-width: 1400px) {
         .pe-8 {
             padding-right: 30px
         }
@@ -842,6 +890,11 @@ body.open-ctv {
     textarea.form-control {
         height: 144px;
         padding-top: 12px;
+    }
+    @media (max-width: 767px) {
+        .title-form {
+            font-size: 32px;
+        }
     }
 }
 
@@ -967,6 +1020,9 @@ body.open-ctv {
 .section-introduce {
     background: rgba(23, 103, 123, 0.05);
     padding: 72px 0;
+    @media (max-width: 1310px) {
+        padding: 40px 0;
+    }
 }
 
 .list-introduce {
@@ -1023,6 +1079,11 @@ body.open-ctv {
             right: 30px;
         }
     }
+    @media (max-width: 991px) {
+        [class*='col-'] {
+            margin-bottom: 16px;
+        }
+    }
 }
 
 // End Sign page
@@ -1032,7 +1093,7 @@ body.open-ctv {
     .input_search {
         border-radius: 16px;
         border: 2px solid #C2EAF4;
-        height: 60px;
+        height: 52px;
         padding-left: 50px;
         padding-right: 24px;
         font-size: 20px;
@@ -1050,7 +1111,7 @@ body.open-ctv {
         border-radius: 50%;
         border: 0;
         left: 6px;
-        top: 2px;
+        top: 0;
         color: #CACACA;
         cursor: pointer;
         svg {
@@ -1214,6 +1275,12 @@ body.open-ctv {
     row-gap: 16px;
     .form-search {
         width: 100%;
+        .input_search {
+            height: 60px;
+        }
+        .icon_seach_web {
+            top: 2px;
+        }
     }
     .select-address {
         width: 310px;
@@ -1239,12 +1306,96 @@ body.open-ctv {
         width: 200px;
         flex-shrink: 0;
     }
+    .btn-fillter {
+        border-radius: 16px;
+        background: #E9E9E9;
+        color: #125464;
+        width: 52px;
+        height: 52px;
+        line-height: 48px;
+        text-align: center;
+        flex-shrink: 0;
+        .svg-off {
+            display: none;
+        }
+        &.off {
+            .svg-on {
+                display: none;
+            }
+            .svg-off {
+                display: inline-block;
+            }
+        }
+    }
+    @media (max-width: 991px) {
+        flex-wrap: wrap;
+        .form-search {
+            .input_search {
+                height: 52px;
+            }
+            .icon_seach_web {
+                top: 0;
+            }
+        }
+        .select-address {
+            width: 200px;
+        }
+        .btn-search {
+            width: calc(100% - 68px);
+            padding: 0 10px;
+            height: 52px;
+        }
+    }
+}
+
+.fillter-select {
+    column-gap: 16px;
+    row-gap: 16px;
+    .select2-item {
+        width: 100%;
+    }
+    @media (max-width: 991px) {
+        flex-wrap: wrap;
+        column-gap: 0;
+        row-gap: 0;
+        margin-left: -8px;
+        margin-right: -8px;
+        &.mb40 {
+            margin-bottom: 14px!important;
+        }
+        .select2-item {
+            width: 50%;
+            margin-bottom: 16px;
+            padding: 0 8px;
+        }
+    }
+}
+
+.fillter-tag {
+    @media (max-width: 767px) {
+        flex-wrap: nowrap;
+        span.mb8 {
+            width: 65px;
+            flex-shrink: 0;
+        }
+        .tab-default {}
+    }
+}
+
+@media (max-width: 991px) {
+    .main-container.flexbox {
+        flex-wrap: wrap;
+    }
 }
 
 .col-left {
     flex-shrink: 0;
     width: 430px;
     padding-right: 30px;
+    @media (max-width: 991px) {
+        width: 100%;
+        padding-right: 0;
+    }
 }
 
 .col-right {
@@ -1275,6 +1426,12 @@ body.open-ctv {
         .ung-tuyen {
             width: 300px;
             flex-shrink: 0;
+        }
+    }
+    @media (max-width: 991px) {
+        .padding-line,
+        .pin-btn-job {
+            padding: 15px;
         }
     }
 }
@@ -1313,6 +1470,12 @@ body.open-ctv {
                     height: 20px;
                     color: #A9A9A9;
                 }
+            }
+        }
+        @media (max-width: 991px) {
+            .logo {
+                width: 120px;
+                margin-right: 20px;
             }
         }
     }

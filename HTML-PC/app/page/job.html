@@ -3,8 +3,8 @@
 <!-- build:content -->
 
 <section class="container clearfix mt30">
-    <div class="box-search-job">
-        <form class="form-search mb16">
+    <div class="box-search-job mb16">
+        <form class="form-search">
             <input type="search" class="input_search search_material" name="keyword" autocomplete="off" value="" placeholder="Tìm kiếm việc làm, công ty, kỹ năng" onfocus="this.placeholder=''" onblur="this.placeholder='Tìm kiếm việc làm, công ty, kỹ năng'">
             <button type="submit" class="icon_seach_web">
                 <svg class="icon-svg">
@@ -35,7 +35,7 @@
                 </div>
             </div>
         </form>
-        <div class="select-address">
+        <div class="select-address d-none d-lg-block">
             <select class="select2" name="" style="width: 100%;">
                 <option value="">Toàn quốc</option>
                 <option value="">Thành phố Hà Nội</option>
@@ -44,6 +44,14 @@
             </select>
         </div>
         <a class="btn-default btn-search">Tìm kiếm</a>
+        <a class="btn-fillter d-block d-lg-none off">
+            <svg class="icon-svg big svg-on">
+                <use xlink:href="images/icons/icon.svg#filter_alt"></use>
+            </svg>
+            <svg class="icon-svg big svg-off">
+                <use xlink:href="images/icons/icon.svg#filter_alt_off"></use>
+            </svg>
+        </a>
     </div>
     <div class="fillter-tag flex align-center color-gray mb30">
         <span class="mb8 me-2">Đề xuất:</span>
@@ -58,36 +66,54 @@
         </div>
     </div>
     <div class="fillter-select flexbox mb40">
-        <select class="select2" name="" style="width: 100%;">
-            <option value="">Lĩnh vực</option>
-            <option value="">Thành phố Hà Nội</option>
-            <option value="">Thành phố HCM</option>
-            <option value="">Đà Nẵng</option>
-        </select>
-        <select class="select2" name="" style="width: 100%;">
-            <option value="">Cấp bậc</option>
-            <option value="">Thành phố Hà Nội</option>
-            <option value="">Thành phố HCM</option>
-            <option value="">Đà Nẵng</option>
-        </select>
-        <select class="select2" name="" style="width: 100%;">
-            <option value="">Mức lương</option>
-            <option value="">Thành phố Hà Nội</option>
-            <option value="">Thành phố HCM</option>
-            <option value="">Đà Nẵng</option>
-        </select>
-        <select class="select2" name="" style="width: 100%;">
-            <option value="">Hình thức bonus</option>
-            <option value="">Thành phố Hà Nội</option>
-            <option value="">Thành phố HCM</option>
-            <option value="">Đà Nẵng</option>
-        </select>
-        <select class="select2" name="" style="width: 100%;">
-            <option value="">Mức hoa hồng</option>
-            <option value="">Thành phố Hà Nội</option>
-            <option value="">Thành phố HCM</option>
-            <option value="">Đà Nẵng</option>
-        </select>
+        <div class="select2-item d-block d-lg-none">
+            <select class="select2" name="" style="width: 100%;">
+                <option value="">Toàn quốc</option>
+                <option value="">Thành phố Hà Nội</option>
+                <option value="">Thành phố HCM</option>
+                <option value="">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="select2-item">
+            <select class="select2" name="" style="width: 100%;">
+                <option value="">Lĩnh vực</option>
+                <option value="">Thành phố Hà Nội</option>
+                <option value="">Thành phố HCM</option>
+                <option value="">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="select2-item">
+            <select class="select2" name="" style="width: 100%;">
+                <option value="">Cấp bậc</option>
+                <option value="">Thành phố Hà Nội</option>
+                <option value="">Thành phố HCM</option>
+                <option value="">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="select2-item">
+            <select class="select2" name="" style="width: 100%;">
+                <option value="">Mức lương</option>
+                <option value="">Thành phố Hà Nội</option>
+                <option value="">Thành phố HCM</option>
+                <option value="">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="select2-item">
+            <select class="select2" name="" style="width: 100%;">
+                <option value="">Hình thức bonus</option>
+                <option value="">Thành phố Hà Nội</option>
+                <option value="">Thành phố HCM</option>
+                <option value="">Đà Nẵng</option>
+            </select>
+        </div>
+        <div class="select2-item">
+            <select class="select2" name="" style="width: 100%;">
+                <option value="">Mức hoa hồng</option>
+                <option value="">Thành phố Hà Nội</option>
+                <option value="">Thành phố HCM</option>
+                <option value="">Đà Nẵng</option>
+            </select>
+        </div>
     </div>
     <div class="flexbox main-container">
         <div class="col-left mb30">

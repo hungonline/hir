@@ -110,6 +110,10 @@
         $('.form-search .btn_reset').click(function() {
             $('.form-search').removeClass("active");
         });
+
+        $(".btn-fillter").click(function() {
+            $(this).toggleClass("off");
+        });
     }
 
 
