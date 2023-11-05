@@ -5,10 +5,10 @@
     right: 0;
     z-index: 1000;
     transition: all .2s ease-in-out;
-    border-bottom: 1px solid rgba(107, 119, 154, 0.15);
     background: #fff;
     &.sticky {
         background-color: #fff;
+        border-bottom: 1px solid rgba(107, 119, 154, 0.15);
         box-shadow: 0 2px 15px rgba(0, 0, 0, .09);
     }
     .flex_row {
@@ -112,6 +112,11 @@
                     border-radius: 6px;
                     position: relative;
                     color: #A9A9A9;
+                }
+                &.active {
+                    .link {
+                        color: #229CBA;
+                    }
                 }
                 .sub_menu {
                     position: relative;
@@ -250,7 +255,7 @@
         .logo-white {
             display: block;
         }
-        .main-menu .nav>li .link{
+        .main-menu .nav>li .link {
             color: #C2EAF4;
         }
     }

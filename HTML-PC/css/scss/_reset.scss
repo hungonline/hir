@@ -3,10 +3,12 @@
     padding: 0px;
     box-sizing: border-box
 }
+
 html {
     overflow-y: scroll;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0 auto;
     color: #626262;
@@ -34,9 +36,39 @@ body::-webkit-scrollbar-track {
     padding-right: 15px
 }
 
+.min-width {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.min-width2 {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
 ul,
 li {
     list-style-type: none;
+}
+
+ul.dotted {
+    li {
+        margin-bottom: 12px;
+        list-style: disc;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+ol.number {
+    li {
+        margin-bottom: 12px;
+        list-style: auto;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
 }
 
 .icon-svg {
@@ -44,6 +76,14 @@ li {
     height: 18px;
     fill: currentColor;
     vertical-align: middle;
+    &.medium {
+        width: 20px;
+        height: 20px;
+    }
+    &.big {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 img {
@@ -148,6 +188,10 @@ u {
     margin-bottom: 5px !important;
 }
 
+.mb8 {
+    margin-bottom: 8px !important;
+}
+
 .mb10 {
     margin-bottom: 10px !important;
 }
@@ -185,15 +229,19 @@ u {
 }
 
 .mb50 {
-    margin-bottom: 50px;
+    margin-bottom: 50px!important;
 }
 
 .mb60 {
-    margin-bottom: 60px;
+    margin-bottom: 60px!important;
 }
 
 .mb80 {
     margin-bottom: 80px;
+}
+
+.mb150 {
+    margin-bottom: 150px;
 }
 
 .mt5 {
@@ -283,7 +331,6 @@ u {
         backface-visibility: hidden;
     }
 }
-
 
 .form-control {
     &:focus {

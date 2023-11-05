@@ -21,6 +21,9 @@ They might well be outsourced to an external stylesheet of course.
 <style type="text/css">
 	svg-Lock-icon { width: 512px; height: 512px; }
 	svg-Message-icon { width: 512px; height: 512px; }
+	svg-access_time-icon { width: 20px; height: 20px; }
+	svg-bar_chart-icon { width: 20px; height: 20px; }
+	svg-bolt-icon { width: 16px; height: 17px; }
 	svg-bookmark-icon { width: 32px; height: 33px; }
 	svg-briefcase-icon { width: 53px; height: 53px; }
 	svg-business-icon { width: 24px; height: 24px; }
@@ -28,20 +31,36 @@ They might well be outsourced to an external stylesheet of course.
 	svg-close-icon { width: 20px; height: 20px; }
 	svg-code-icon { width: 20px; height: 20px; }
 	svg-currency_exchange-icon { width: 32px; height: 33px; }
+	svg-diversity_1-icon { width: 32px; height: 33px; }
+	svg-download-icon { width: 32px; height: 32px; }
+	svg-edit-icon { width: 20px; height: 20px; }
+	svg-edit_calendar-icon { width: 20px; height: 20px; }
 	svg-gpp_good-icon { width: 32px; height: 33px; }
 	svg-group_add-icon { width: 32px; height: 33px; }
 	svg-lang-icon { width: 14px; height: 14px; }
 	svg-loan-icon { width: 52px; height: 53px; }
+	svg-local_atm-icon { width: 16px; height: 17px; }
 	svg-location-icon { width: 18px; height: 19px; }
+	svg-moving-icon { width: 20px; height: 20px; }
+	svg-next-icon { width: 48px; height: 48px; }
+	svg-not_listed_location-icon { width: 20px; height: 21px; }
 	svg-office-icon { width: 52px; height: 53px; }
 	svg-paid-icon { width: 16px; height: 17px; }
 	svg-phone-icon { width: 20px; height: 20px; }
+	svg-plus-icon { width: 24px; height: 24px; }
+	svg-prev-icon { width: 48px; height: 48px; }
 	svg-right-icon { width: 20px; height: 16px; }
 	svg-search-icon { width: 21px; height: 20px; }
+	svg-share-icon { width: 28px; height: 28px; }
 	svg-signpost-icon { width: 32px; height: 33px; }
+	svg-support_agent-icon { width: 32px; height: 33px; }
+	svg-travel_explore-icon { width: 32px; height: 33px; }
 	svg-user-icon { width: 20px; height: 20px; }
 	svg-visibility_off-icon { width: 24px; height: 24px; }
+	svg-visibility_on-icon { width: 20px; height: 20px; }
 	svg-web-icon { width: 32px; height: 33px; }
+	svg-work_history-icon { width: 20px; height: 20px; }
+	svg-work_outline-icon { width: 20px; height: 20px; }
 </style>
 <!--
 ====================================================================================================
@@ -66,27 +85,46 @@ for further details on how to create this embeddable sprite variant.
 <svg width="0" height="0" style="position:absolute">
 		<symbol viewBox="0 0 512 512" id="Lock" xmlns="http://www.w3.org/2000/svg"><path d="M400 188h-36.037v-82.23c0-58.322-48.449-105.77-108-105.77s-108 47.448-108 105.77V188H112c-33.084 0-60 26.916-60 60v204c0 33.084 26.916 60 60 60h288c33.084 0 60-26.916 60-60V248c0-33.084-26.916-60-60-60zm-212.037-82.23c0-36.266 30.505-65.77 68-65.77s68 29.504 68 65.77V188h-136v-82.23zM420 452c0 11.028-8.972 20-20 20H112c-11.028 0-20-8.972-20-20V248c0-11.028 8.972-20 20-20h288c11.028 0 20 8.972 20 20v204z"/><path d="M256 286c-20.435 0-37 16.565-37 37 0 13.048 6.76 24.51 16.963 31.098V398c0 11.045 8.954 20 20 20 11.045 0 20-8.955 20-20v-43.855C286.207 347.565 293 336.08 293 323c0-20.435-16.565-37-37-37z"/></symbol>
 		<symbol viewBox="0 0 479.06 479.06" id="Message" xmlns="http://www.w3.org/2000/svg"><path d="M434.146 59.882H44.912C20.146 59.882 0 80.028 0 104.794v269.47c0 24.766 20.146 44.912 44.912 44.912h389.234c24.766 0 44.912-20.146 44.912-44.912v-269.47c0-24.766-20.146-44.912-44.912-44.912zm0 29.941c2.034 0 3.969.422 5.738 1.159L239.529 264.631 39.173 90.982a14.902 14.902 0 015.738-1.159zm0 299.411H44.912c-8.26 0-14.971-6.71-14.971-14.971V122.615l199.778 173.141c2.822 2.441 6.316 3.655 9.81 3.655s6.988-1.213 9.81-3.655l199.778-173.141v251.649c-.001 8.26-6.711 14.97-14.971 14.97z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="access_time" xmlns="http://www.w3.org/2000/svg"><path d="M9.992 1.667c-4.6 0-8.325 3.733-8.325 8.333s3.725 8.333 8.325 8.333c4.608 0 8.341-3.733 8.341-8.333S14.6 1.667 9.992 1.667zm.008 15A6.665 6.665 0 013.333 10 6.665 6.665 0 0110 3.333 6.665 6.665 0 0116.667 10 6.665 6.665 0 0110 16.667zM9.817 5.833h-.05c-.334 0-.6.267-.6.6v3.934c0 .291.15.566.408.716l3.458 2.075c.284.167.65.084.817-.2a.592.592 0 00-.208-.825l-3.225-1.916V6.433c0-.333-.267-.6-.6-.6z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="bar_chart" xmlns="http://www.w3.org/2000/svg"><path d="M5 16.667c.917 0 1.667-.75 1.667-1.667V9.167C6.667 8.25 5.917 7.5 5 7.5s-1.667.75-1.667 1.667V15c0 .917.75 1.667 1.667 1.667zm8.333-4.167V15c0 .917.75 1.667 1.667 1.667s1.667-.75 1.667-1.667v-2.5c0-.917-.75-1.667-1.667-1.667s-1.667.75-1.667 1.667zM10 16.667c.917 0 1.667-.75 1.667-1.667V5c0-.917-.75-1.667-1.667-1.667S8.333 4.083 8.333 5v10c0 .917.75 1.667 1.667 1.667z"/></symbol>
+		<symbol viewBox="0 0 16 17" id="bolt" xmlns="http://www.w3.org/2000/svg"><path d="M7.33 14.5h-.666l.666-4.667H4.997c-.587 0-.22-.5-.207-.52.86-1.52 2.154-3.786 3.88-6.813h.667L8.67 7.167h2.34c.267 0 .414.126.267.44A5224.081 5224.081 0 007.33 14.5z"/></symbol>
 		<symbol viewBox="0 0 32 33" id="bookmark" xmlns="http://www.w3.org/2000/svg"><path d="M22.667 4.304H9.333a2.675 2.675 0 00-2.666 2.667v21.333l9.333-4 9.333 4V6.971c0-1.467-1.2-2.667-2.666-2.667zm0 20L16 21.398l-6.667 2.906v-16c0-.733.6-1.333 1.334-1.333h10.666c.734 0 1.334.6 1.334 1.333v16z"/></symbol>
 		<symbol viewBox="0 0 53 53" id="briefcase" xmlns="http://www.w3.org/2000/svg"><path d="M19.51 10.713V4.261h15.055v6.452" stroke="#C2EAF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M21.661 34.369H3.381V12.864a2.15 2.15 0 012.151-2.151h43.011a2.15 2.15 0 012.15 2.15V34.37H32.415m16.128 5.375v7.527a2.15 2.15 0 01-2.15 2.15H7.682a2.15 2.15 0 01-2.15-2.15v-7.527" stroke="#C2EAF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M32.414 30.068H21.661v8.602h10.753v-8.602z" stroke="#C2EAF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol viewBox="0 0 24 24" id="business" xmlns="http://www.w3.org/2000/svg"><path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/></symbol>
-		<symbol viewBox="0 0 16 16" id="cancel" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#fclip0)"><path d="M8.938 8.005l6.858-6.859a.666.666 0 10-.942-.942L7.995 7.062 1.137.204a.666.666 0 00-.942.942l6.858 6.859-6.858 6.858a.666.666 0 00.942.942l6.858-6.858 6.859 6.858a.666.666 0 00.942-.942L8.938 8.005z"/></g><defs><clipPath id="fclip0"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol>
+		<symbol viewBox="0 0 16 16" id="cancel" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#aiclip0)"><path d="M8.938 8.005l6.858-6.859a.666.666 0 10-.942-.942L7.995 7.062 1.137.204a.666.666 0 00-.942.942l6.858 6.859-6.858 6.858a.666.666 0 00.942.942l6.858-6.858 6.859 6.858a.666.666 0 00.942-.942L8.938 8.005z"/></g><defs><clipPath id="aiclip0"><path d="M0 0h16v16H0z"/></clipPath></defs></symbol>
 		<symbol viewBox="0 0 20 20" id="close" xmlns="http://www.w3.org/2000/svg"><path d="M19.867 19.073a.556.556 0 00-.06-.06l-9.023-9.028L19.812.962a.556.556 0 10-.787-.787l-9.022 9.029L.98.175a.556.556 0 10-.786.787l9.028 9.023-9.028 9.022a.554.554 0 10.78.781l9.029-9.022 9.022 9.028a.554.554 0 00.842-.72z"/></symbol>
 		<symbol viewBox="0 0 20 20" id="code" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 9.167h6.667V2.5H2.5v6.667zm1.667-5H7.5V7.5H4.167V4.167zM2.5 17.5h6.667v-6.667H2.5V17.5zm1.667-5H7.5v3.333H4.167V12.5zm6.666-10v6.667H17.5V2.5h-6.667zm5 5H12.5V4.167h3.333V7.5zm1.667 8.333h-1.667V17.5H17.5v-1.667zm-5-5h-1.667V12.5H12.5v-1.667zm1.667 1.667H12.5v1.667h1.667V12.5zM12.5 14.167h-1.667v1.666H12.5v-1.666zm1.667 1.666H12.5V17.5h1.667v-1.667zm1.666-1.666h-1.666v1.666h1.666v-1.666zm0-3.334h-1.666V12.5h1.666v-1.667zM17.5 12.5h-1.667v1.667H17.5V12.5z"/></symbol>
 		<symbol viewBox="0 0 32 33" id="currency_exchange" xmlns="http://www.w3.org/2000/svg"><path d="M17.187 15.104c-2.374-.786-3.52-1.28-3.52-2.533 0-1.36 1.48-1.854 2.413-1.854 1.747 0 2.387 1.32 2.533 1.787l2.107-.893c-.2-.6-1.093-2.56-3.387-2.987V6.971h-2.666v1.68c-3.307.747-3.32 3.813-3.32 3.947 0 3.026 3 3.88 4.466 4.413 2.107.747 3.04 1.427 3.04 2.707 0 1.506-1.4 2.146-2.64 2.146-2.426 0-3.12-2.493-3.2-2.787l-2.213.894c.84 2.92 3.04 3.706 3.867 3.947v1.72h2.666v-1.654c.534-.12 3.867-.787 3.867-4.293 0-1.854-.813-3.48-4.013-4.587zM4 28.304H1.333v-8h8v2.667H6.027A11.977 11.977 0 0016 28.304c6.627 0 12-5.373 12-12h2.667c0 8.107-6.56 14.667-14.667 14.667-4.96 0-9.347-2.467-12-6.227v3.56zm-2.667-12C1.333 8.198 7.893 1.638 16 1.638c4.96 0 9.347 2.466 12 6.226v-3.56h2.667v8h-8V9.638h3.306A11.977 11.977 0 0016 4.304c-6.627 0-12 5.374-12 12H1.333z"/></symbol>
+		<symbol viewBox="0 0 32 33" id="diversity_1" xmlns="http://www.w3.org/2000/svg"><path d="M5.333 22.465a2.667 2.667 0 100-5.334 2.667 2.667 0 000 5.334zm-3.706 2.106A2.681 2.681 0 000 27.038v2.093h6v-2.146c0-1.107.307-2.147.84-3.054a9.31 9.31 0 00-1.507-.133c-1.32 0-2.573.28-3.706.773zm25.04-2.106a2.667 2.667 0 100-5.334 2.667 2.667 0 000 5.334zm3.706 2.106a9.267 9.267 0 00-3.706-.773 9.31 9.31 0 00-1.507.133c.533.907.84 1.947.84 3.054v2.146h6v-2.093c0-1.08-.64-2.04-1.627-2.467zm-8.72-1.24a13.93 13.93 0 00-5.653-1.2c-2.173 0-4.093.52-5.653 1.2-1.44.64-2.347 2.08-2.347 3.654v2.146h16v-2.146c0-1.574-.907-3.014-2.347-3.654zM10.76 26.465c.12-.307.36-.56.653-.694a11.192 11.192 0 014.574-.973c1.573 0 3.106.333 4.573.973.307.134.533.387.653.694H10.76zM12 17.131c0 2.214 1.787 4 4 4s4-1.786 4-4c0-2.213-1.787-4-4-4s-4 1.787-4 4zm5.333 0c0 .734-.6 1.334-1.333 1.334s-1.333-.6-1.333-1.334c0-.733.6-1.333 1.333-1.333s1.333.6 1.333 1.333z"/><path d="M3.307 15.611c-.414-1.013-.64-2-.64-3.013 0-3.44 2.693-6.133 6.133-6.133 3.573 0 5.093 2.32 7.2 4.786 2.093-2.44 3.6-4.786 7.2-4.786 3.44 0 6.133 2.693 6.133 6.133 0 1.013-.226 2-.64 3.013a4.655 4.655 0 012.04 1.92c.8-1.6 1.267-3.226 1.267-4.933 0-4.933-3.867-8.8-8.8-8.8-2.787 0-5.453 1.293-7.2 3.347-1.747-2.054-4.413-3.347-7.2-3.347-4.933 0-8.8 3.867-8.8 8.8 0 1.707.467 3.333 1.28 4.933a4.696 4.696 0 012.027-1.92z"/></symbol>
+		<symbol viewBox="0 0 32 32" id="download" xmlns="http://www.w3.org/2000/svg"><path d="M22.12 12.667H20V6c0-.733-.6-1.333-1.333-1.333h-5.334C12.6 4.667 12 5.267 12 6v6.667H9.88c-1.187 0-1.787 1.44-.947 2.28l6.12 6.12c.52.52 1.36.52 1.88 0l6.12-6.12c.84-.84.254-2.28-.933-2.28zM6.667 26c0 .733.6 1.333 1.333 1.333h16c.733 0 1.333-.6 1.333-1.333s-.6-1.333-1.333-1.333H8c-.733 0-1.333.6-1.333 1.333z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="edit" xmlns="http://www.w3.org/2000/svg"><path d="M12.5 13.333l-3.333 3.334H17.5v-3.334h-5zm-2.45-7.341l-7.55 7.55v3.125h3.125l7.55-7.55-3.125-3.125zM4.933 15h-.766v-.767L10.05 8.35l.767.767L4.933 15zm10.659-8.3a.83.83 0 000-1.175l-1.95-1.95a.834.834 0 00-1.175 0L10.942 5.1l3.125 3.125L15.592 6.7z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="edit_calendar" xmlns="http://www.w3.org/2000/svg"><path d="M3.278 7.917h11.667v1.666h1.666v-5c0-.916-.75-1.666-1.666-1.666h-.834V1.25h-1.666v1.667H5.778V1.25H4.111v1.667h-.833A1.66 1.66 0 001.62 4.583L1.61 16.25c0 .917.742 1.667 1.667 1.667H9.11V16.25H3.278V7.917zm0-3.334h11.667V6.25H3.278V4.583zm14.867 8.567l-.592.592-1.767-1.767.592-.592a.83.83 0 011.175 0l.592.592a.83.83 0 010 1.175zm-2.95-.583l1.766 1.766-4.416 4.417h-1.767v-1.767l4.417-4.416z"/></symbol>
 		<symbol viewBox="0 0 32 33" id="gpp_good" xmlns="http://www.w3.org/2000/svg"><path d="M16 2.97l-10.667 4v8.12c0 6.734 4.547 13.014 10.667 14.548 6.12-1.534 10.667-7.814 10.667-14.547V6.97L16 2.97zm8 12.12c0 5.334-3.4 10.268-8 11.774-4.6-1.506-8-6.426-8-11.773V8.718l8-2.827 8 2.827v6.373zm-12.24-.666l-1.893 1.88 4.72 4.72 7.546-7.546-1.88-1.88L14.6 17.25l-2.84-2.827z"/></symbol>
 		<symbol viewBox="0 0 32 33" id="group_add" xmlns="http://www.w3.org/2000/svg"><path d="M29.333 12.304V9.638h-2.666v2.666H24v2.667h2.667v2.667h2.666V14.97H32v-2.667h-2.667zm-18.666 4A5.332 5.332 0 0016 10.971a5.332 5.332 0 00-5.333-5.333 5.332 5.332 0 00-5.334 5.333 5.332 5.332 0 005.334 5.333zm0-8c1.466 0 2.666 1.2 2.666 2.667 0 1.467-1.2 2.667-2.666 2.667A2.675 2.675 0 018 10.97c0-1.467 1.2-2.667 2.667-2.667zm0 9.334C7.107 17.638 0 19.424 0 22.97v4h21.333v-4c0-3.547-7.106-5.333-10.666-5.333zm8 6.666h-16v-1.32c.266-.96 4.4-2.68 8-2.68 3.6 0 7.733 1.72 8 2.667v1.333zm-1.987-18.6a8.021 8.021 0 011.987 5.267c0 2.013-.76 3.853-1.987 5.267 2.613-.334 4.653-2.547 4.653-5.267s-2.04-4.933-4.653-5.267zm5.36 13.04c1.187 1.107 1.96 2.494 1.96 4.227v4h2.667v-4c0-1.933-2.12-3.347-4.627-4.227z"/></symbol>
 		<symbol viewBox="0 0 14 14" id="lang" xmlns="http://www.w3.org/2000/svg"><path d="M7 0C3.13 0 0 3.13 0 7s3.13 7 7 7 7-3.13 7-7-3.13-7-7-7zM4.887.953c-.37.519-.684 1.065-.948 1.638H2.351A6.348 6.348 0 014.887.953zM1.85 3.187h1.839a10.532 10.532 0 00-.705 3.515H.604A6.385 6.385 0 011.85 3.187zm0 7.626A6.385 6.385 0 01.604 7.298h2.38a10.46 10.46 0 00.715 3.515h-1.85zm.502.596h1.603c.266.573.581 1.125.945 1.643a6.37 6.37 0 01-2.55-1.642zm4.351 1.99a6.825 6.825 0 01-.879-.1 10.115 10.115 0 01-1.21-1.887h2.09v1.987zm0-2.585H4.34a9.963 9.963 0 01-.761-3.516h3.123v3.515zm0-4.112H3.58a10 10 0 01.756-3.515h2.367v3.515zm.003-4.111H4.607A9.78 9.78 0 015.823.704c.287-.054.581-.086.882-.1v1.987zm5.445.595a6.356 6.356 0 011.246 3.516h-2.38a10.474 10.474 0 00-.715-3.515h1.85zm-.5-.595h-1.604A10.544 10.544 0 009.1.948a6.36 6.36 0 012.55 1.643zM7.297.604c.298.014.592.049.879.1.475.587.881 1.22 1.21 1.887h-2.09V.604zm0 2.583H9.66a9.95 9.95 0 01.761 3.515H7.298V3.187zm0 4.11h3.123a10.036 10.036 0 01-.756 3.516H7.298V7.298zm-.003 6.099v-1.987h2.099a9.78 9.78 0 01-1.216 1.887 6.34 6.34 0 01-.882.1zm1.804-.344c.363-.518.678-1.07.941-1.643h1.612A6.391 6.391 0 019.1 13.052zm1.193-2.239a10.98 10.98 0 00.722-3.515h2.385a6.386 6.386 0 01-1.246 3.515h-1.86z"/></symbol>
-		<symbol viewBox="0 0 52 53" id="loan" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#mclip0_1_1064)" stroke="#C2EAF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M40.516 33.294l4.694-2.689a3.284 3.284 0 014.47 1.204l.038.066a3.371 3.371 0 01-.752 4.301l-8.728 7.205a4.265 4.265 0 01-1.801.878l-16.56 3.68a4.302 4.302 0 01-3.318-.62L8.267 40.467a4.3 4.3 0 00-2.386-.723h-3V26.842l7.635-.848a8.59 8.59 0 013.97.495l5.876 2.203a8.51 8.51 0 001.643.437L33 30.913a3.465 3.465 0 01-.001 6.912l-11.837.845m10.752-15.054c5.345 0 9.677-4.332 9.677-9.677S37.26 4.26 31.914 4.26s-9.678 4.333-9.678 9.678c0 5.345 4.333 9.677 9.678 9.677z"/><path d="M31.915 9.638l-4.301 4.301 4.301 4.301 4.301-4.301-4.3-4.301z"/></g><defs><clipPath id="mclip0_1_1064"><path transform="translate(.194 .498)" d="M0 0h51.61v51.61H0z"/></clipPath></defs></symbol>
+		<symbol viewBox="0 0 52 53" id="loan" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#atclip0_1_1064)" stroke="#C2EAF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M40.516 33.294l4.694-2.689a3.284 3.284 0 014.47 1.204l.038.066a3.371 3.371 0 01-.752 4.301l-8.728 7.205a4.265 4.265 0 01-1.801.878l-16.56 3.68a4.302 4.302 0 01-3.318-.62L8.267 40.467a4.3 4.3 0 00-2.386-.723h-3V26.842l7.635-.848a8.59 8.59 0 013.97.495l5.876 2.203a8.51 8.51 0 001.643.437L33 30.913a3.465 3.465 0 01-.001 6.912l-11.837.845m10.752-15.054c5.345 0 9.677-4.332 9.677-9.677S37.26 4.26 31.914 4.26s-9.678 4.333-9.678 9.678c0 5.345 4.333 9.677 9.678 9.677z"/><path d="M31.915 9.638l-4.301 4.301 4.301 4.301 4.301-4.301-4.3-4.301z"/></g><defs><clipPath id="atclip0_1_1064"><path transform="translate(.194 .498)" d="M0 0h51.61v51.61H0z"/></clipPath></defs></symbol>
+		<symbol viewBox="0 0 16 17" id="local_atm" xmlns="http://www.w3.org/2000/svg"><path d="M7.333 11.833h1.334v-.666h.666c.367 0 .667-.3.667-.667v-2c0-.367-.3-.667-.667-.667h-2v-.666H10V5.833H8.667v-.666H7.333v.666h-.666c-.367 0-.667.3-.667.667v2c0 .367.3.667.667.667h2v.666H6v1.334h1.333v.666zm6-8.666H2.667c-.74 0-1.327.593-1.327 1.333l-.007 8c0 .74.594 1.333 1.334 1.333h10.666c.74 0 1.334-.593 1.334-1.333v-8c0-.74-.594-1.333-1.334-1.333zm0 9.333H2.667v-8h10.666v8z"/></symbol>
 		<symbol viewBox="0 0 18 19" id="location" xmlns="http://www.w3.org/2000/svg"><path d="M9 2.304a5.246 5.246 0 00-5.25 5.25c0 3.938 5.25 9.75 5.25 9.75s5.25-5.812 5.25-9.75A5.246 5.246 0 009 2.304zm-3.75 5.25c0-2.07 1.68-3.75 3.75-3.75 2.07 0 3.75 1.68 3.75 3.75 0 2.16-2.16 5.393-3.75 7.41-1.56-2.002-3.75-5.272-3.75-7.41z"/><path d="M9 9.43a1.875 1.875 0 100-3.75 1.875 1.875 0 000 3.75z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="moving" xmlns="http://www.w3.org/2000/svg"><path d="M2.081 14.582a.83.83 0 001.175 0l3.825-3.825a.83.83 0 011.175 0l.975.975a2.5 2.5 0 003.534 0l3.483-3.475 1.2 1.2a.416.416 0 00.708-.291V5.59a.4.4 0 00-.408-.417h-3.575a.412.412 0 00-.292.708l1.2 1.2-3.475 3.475a.83.83 0 01-1.175 0l-.975-.975a2.5 2.5 0 00-3.533 0L2.08 13.407a.845.845 0 000 1.175z"/></symbol>
+		<symbol viewBox="0 0 48 48" id="next" xmlns="http://www.w3.org/2000/svg"><circle cx="24" cy="24" r="19.5" stroke="#A9A9A9"/><path d="M27.564 17.645a1.112 1.112 0 00-1.572 1.572l3.66 3.658H16.777a1.111 1.111 0 000 2.223H29.65l-3.659 3.659a1.112 1.112 0 101.572 1.57l5.555-5.555a1.111 1.111 0 000-1.571l-5.555-5.556z"/></symbol>
+		<symbol viewBox="0 0 20 21" id="not_listed_location" xmlns="http://www.w3.org/2000/svg"><path d="M10.008 14a.825.825 0 01-.591-.242.792.792 0 01-.242-.592.822.822 0 01.817-.833h.016c.234 0 .425.083.592.241.15.159.233.359.233.584a.839.839 0 01-.241.591.782.782 0 01-.584.25zm-.733-3.05c0-.376.083-.7.242-.967.158-.275.441-.584.833-.934.233-.208.4-.391.508-.55a.913.913 0 00.159-.533.84.84 0 00-.267-.617c-.175-.166-.417-.25-.708-.25-.309 0-.617.084-.8.25-.175.167-.334.375-.334.817H7.5c0-.842.383-1.442.808-1.842A2.507 2.507 0 0110 5.666c.492 0 .925.1 1.308.292.384.191.659.458.875.8.217.341.317.716.317 1.125 0 .408-.083.75-.258 1.041-.175.292-.4.592-.742.909-.267.25-.442.466-.542.641-.1.175-.15.409-.15.675v.35H9.267v-.55h.008zM15 9.165C15 6.141 12.792 4 10 4S5 6.141 5 9.166c0 1.95 1.625 4.533 5 7.617 3.375-3.084 5-5.667 5-7.617zm-5-6.833c3.5 0 6.667 2.683 6.667 6.833 0 2.767-2.225 6.042-6.667 9.833-4.442-3.791-6.667-7.066-6.667-9.833 0-4.15 3.167-6.833 6.667-6.833z"/></symbol>
 		<symbol viewBox="0 0 52 53" id="office" xmlns="http://www.w3.org/2000/svg"><path d="M38.5 23.482V7.352H14.306V28.32m8.871 22.581h6.452M26.403 2.514v4.839M23.177 33.16H5.435V50.9h17.742V33.16zm24.194-4.84H29.629v22.581h17.742v-22.58zM20.758 12.998h11.29m-11.29 4.839h11.29m-11.29 4.838h11.29M11.887 39.61h4.839m19.354-4.838h4.84m-4.84 4.838h4.84m-4.84 4.84h4.84m-29.033 0h4.839" stroke="#C2EAF4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
 		<symbol viewBox="0 0 16 17" id="paid" xmlns="http://www.w3.org/2000/svg"><path d="M8 2.138a6.67 6.67 0 00-6.667 6.666A6.67 6.67 0 008 15.471a6.67 6.67 0 006.667-6.667A6.669 6.669 0 008 2.138zm0 12a5.34 5.34 0 01-5.333-5.334A5.34 5.34 0 018 3.471a5.34 5.34 0 015.333 5.333A5.34 5.34 0 018 14.137zm.593-5.934c-1.186-.393-1.76-.64-1.76-1.266 0-.68.74-.927 1.207-.927.873 0 1.193.66 1.267.893l1.053-.446c-.1-.294-.547-1.274-1.773-1.487v-.833H7.42v.84c-1.733.373-1.747 1.9-1.747 1.973 0 1.513 1.5 1.94 2.234 2.207 1.053.373 1.52.713 1.52 1.353 0 .753-.7 1.073-1.32 1.073-1.214 0-1.56-1.246-1.6-1.393l-1.107.446c.42 1.46 1.52 1.854 2.013 1.974v.86H8.58v-.827c.347-.06 2.013-.393 2.013-2.146.007-.927-.4-1.74-2-2.294z"/></symbol>
 		<symbol viewBox="0 0 20 20" id="phone" xmlns="http://www.w3.org/2000/svg"><path d="M5.45 4.167c.05.741.175 1.466.375 2.158l-1 1c-.342-1-.558-2.058-.633-3.158H5.45zm8.217 10.016c.708.2 1.433.325 2.166.375V15.8a12.856 12.856 0 01-3.166-.625l1-.992zM6.25 2.5H3.333a.836.836 0 00-.833.833C2.5 11.158 8.842 17.5 16.667 17.5a.836.836 0 00.833-.833v-2.909a.836.836 0 00-.833-.833 9.506 9.506 0 01-2.975-.475.7.7 0 00-.259-.042.854.854 0 00-.591.242l-1.834 1.833a12.624 12.624 0 01-5.491-5.491L7.35 7.158a.836.836 0 00.208-.85 9.467 9.467 0 01-.475-2.975.836.836 0 00-.833-.833z"/></symbol>
+		<symbol viewBox="0 0 24 24" id="plus" xmlns="http://www.w3.org/2000/svg"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></symbol>
+		<symbol viewBox="0 0 48 48" id="prev" xmlns="http://www.w3.org/2000/svg"><circle cx="20" cy="20" r="19.5" transform="matrix(-1 0 0 1 44 4)" stroke="#A9A9A9"/><path d="M20.436 17.645a1.112 1.112 0 011.572 1.572l-3.66 3.658h12.874a1.111 1.111 0 010 2.223H18.349l3.659 3.659a1.112 1.112 0 11-1.572 1.57l-5.555-5.555a1.111 1.111 0 010-1.571l5.555-5.556z"/></symbol>
 		<symbol viewBox="0 0 20 16" id="right" xmlns="http://www.w3.org/2000/svg"><path d="M13.384.866a1.25 1.25 0 00-1.768 1.768l4.117 4.116H1.25a1.25 1.25 0 000 2.5h14.482l-4.116 4.116a1.25 1.25 0 101.768 1.768l6.25-6.25a1.25 1.25 0 000-1.768l-6.25-6.25z"/></symbol>
 		<symbol viewBox="0 0 21 20" id="search" xmlns="http://www.w3.org/2000/svg"><path d="M8.925 0C4.069 0 .117 3.951.117 8.808c0 4.856 3.952 8.807 8.808 8.807 4.857 0 8.808-3.95 8.808-8.807S13.782 0 8.925 0zm0 15.99c-3.96 0-7.182-3.223-7.182-7.182 0-3.96 3.222-7.182 7.182-7.182 3.96 0 7.182 3.222 7.182 7.182 0 3.96-3.222 7.181-7.182 7.181z"/><path d="M19.88 18.612l-4.662-4.661a.813.813 0 10-1.15 1.15l4.662 4.66a.81.81 0 001.15 0 .813.813 0 000-1.15z"/></symbol>
+		<symbol viewBox="0 0 28 28" id="share" xmlns="http://www.w3.org/2000/svg"><path d="M21 18.807a3.4 3.4 0 00-2.287.898l-8.318-4.842a3.82 3.82 0 00.105-.816c0-.28-.047-.549-.105-.817l8.225-4.795c.63.583 1.458.945 2.38.945 1.937 0 3.5-1.563 3.5-3.5s-1.563-3.5-3.5-3.5a3.495 3.495 0 00-3.5 3.5c0 .28.047.548.105.817L9.38 11.492A3.485 3.485 0 007 10.547a3.495 3.495 0 00-3.5 3.5c0 1.936 1.563 3.5 3.5 3.5.922 0 1.75-.362 2.38-.945l8.307 4.853a3.288 3.288 0 00-.094.758A3.41 3.41 0 0021 25.62a3.41 3.41 0 003.407-3.407A3.41 3.41 0 0021 18.807z"/></symbol>
 		<symbol viewBox="0 0 32 33" id="signpost" xmlns="http://www.w3.org/2000/svg"><path d="M17.333 13.638H24l4-4-4-4h-6.667V2.97h-2.666v2.667H5.333v8h9.334v2.666H8l-4 4 4 4h6.667v5.334h2.666v-5.334h9.334v-8h-9.334v-2.666zM8 8.304h14.893l1.334 1.334-1.334 1.333H8V8.304zm16 13.334H9.107l-1.334-1.334 1.334-1.333H24v2.667z"/></symbol>
-		<symbol viewBox="0 0 20 20" id="user" xmlns="http://www.w3.org/2000/svg"><path d="M10 4.917a1.75 1.75 0 110 3.5 1.75 1.75 0 010-3.5zm0 7.5c2.475 0 5.084 1.216 5.084 1.75v.916H4.917v-.916c0-.534 2.608-1.75 5.083-1.75zm0-9.084A3.332 3.332 0 1010 10a3.332 3.332 0 100-6.667zm0 7.5c-2.225 0-6.667 1.117-6.667 3.334v2.5h13.334v-2.5c0-2.217-4.442-3.334-6.667-3.334z"/></symbol>
+		<symbol viewBox="0 0 32 33" id="support_agent" xmlns="http://www.w3.org/2000/svg"><path d="M28 16.758c0-7.32-5.68-12.293-12-12.293-6.253 0-12 4.866-12 12.373a2.624 2.624 0 00-1.333 2.293v2.667c0 1.467 1.2 2.667 2.667 2.667h1.333V16.33A9.327 9.327 0 0116 6.998a9.327 9.327 0 019.334 9.333v9.467H14.667v2.667h10.667c1.466 0 2.666-1.2 2.666-2.667V24.17a2.465 2.465 0 001.334-2.186v-3.067c0-.933-.547-1.747-1.334-2.16z"/><path d="M12 19.131a1.333 1.333 0 100-2.667 1.333 1.333 0 000 2.667zm8 0a1.333 1.333 0 100-2.667 1.333 1.333 0 000 2.667z"/><path d="M24 15.171c-.64-3.8-3.946-6.706-7.933-6.706-4.04 0-8.387 3.346-8.04 8.6a10.766 10.766 0 006.48-7.854c1.747 3.507 5.333 5.92 9.493 5.96z"/></symbol>
+		<symbol viewBox="0 0 32 33" id="travel_explore" xmlns="http://www.w3.org/2000/svg"><path d="M25.4 22.998c.533-.933.933-2 .933-3.2 0-3.333-2.667-6-6-6s-6 2.667-6 6 2.667 6 6 6c1.2 0 2.267-.4 3.2-.933L27.8 29.13l1.866-1.866-4.266-4.267zm-5.067.133A3.3 3.3 0 0117 19.798a3.3 3.3 0 013.333-3.333 3.3 3.3 0 013.333 3.333 3.3 3.3 0 01-3.333 3.333zm-4.667 4v2.667c-7.36 0-13.333-5.973-13.333-13.333S8.306 3.13 15.666 3.13c6.454 0 11.827 4.587 13.067 10.667h-2.76c-.853-3.28-3.2-5.96-6.307-7.213v.546c0 1.467-1.2 2.667-2.666 2.667h-2.667v2.667c0 .733-.6 1.333-1.333 1.333h-2.667v2.667H13v4h-1.334L5.28 14.078c-.174.773-.28 1.56-.28 2.387 0 5.88 4.786 10.666 10.666 10.666z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="user" xmlns="http://www.w3.org/2000/svg"><path d="M10 4.917a1.75 1.75 0 110 3.5 1.75 1.75 0 010-3.5zm0 7.5c2.475 0 5.083 1.216 5.083 1.75v.916H4.917v-.916c0-.534 2.608-1.75 5.083-1.75zm0-9.084A3.332 3.332 0 1010 10a3.332 3.332 0 003.333-3.333A3.332 3.332 0 0010 3.333zm0 7.5c-2.225 0-6.667 1.117-6.667 3.334v1.666c0 .459.375.834.834.834h11.666a.836.836 0 00.834-.834v-1.666c0-2.217-4.442-3.334-6.667-3.334z"/></symbol>
 		<symbol viewBox="0 0 24 24" id="visibility_off" xmlns="http://www.w3.org/2000/svg"><path d="M12 5.975a9.77 9.77 0 018.82 5.5 9.647 9.647 0 01-2.41 3.12l1.41 1.41c1.39-1.23 2.49-2.77 3.18-4.53-1.73-4.39-6-7.5-11-7.5-1.27 0-2.49.2-3.64.57l1.65 1.65c.65-.13 1.31-.22 1.99-.22zm-1.07 1.14L13 9.185c.57.25 1.03.71 1.28 1.28l2.07 2.07c.08-.34.14-.7.14-1.07.01-2.48-2.01-4.49-4.49-4.49-.37 0-.72.05-1.07.14zm-8.92-3.27l2.68 2.68A11.738 11.738 0 001 11.475c1.73 4.39 6 7.5 11 7.5 1.52 0 2.98-.29 4.32-.82l3.42 3.42 1.41-1.41L3.42 2.425l-1.41 1.42zm7.5 7.5l2.61 2.61c-.04.01-.08.02-.12.02a2.5 2.5 0 01-2.5-2.5c0-.05.01-.08.01-.13zm-3.4-3.4l1.75 1.75a4.6 4.6 0 00-.36 1.78 4.507 4.507 0 006.27 4.14l.98.98c-.88.24-1.8.38-2.75.38a9.77 9.77 0 01-8.82-5.5c.7-1.43 1.72-2.61 2.93-3.53z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="visibility_on" xmlns="http://www.w3.org/2000/svg"><path d="M10 5.417A8.142 8.142 0 0117.35 10 8.133 8.133 0 0110 14.583 8.133 8.133 0 012.65 10 8.142 8.142 0 0110 5.417zm0-1.667C5.833 3.75 2.275 6.342.833 10c1.442 3.658 5 6.25 9.167 6.25 4.166 0 7.725-2.592 9.166-6.25-1.441-3.658-5-6.25-9.166-6.25zm0 4.167a2.084 2.084 0 11-.002 4.168A2.084 2.084 0 0110 7.917zm0-1.667A3.756 3.756 0 006.25 10 3.756 3.756 0 0010 13.75 3.756 3.756 0 0013.75 10 3.756 3.756 0 0010 6.25z"/></symbol>
 		<symbol viewBox="0 0 32 33" id="web" xmlns="http://www.w3.org/2000/svg"><path d="M16 2.97c-7.36 0-13.333 5.974-13.333 13.334 0 7.36 5.973 13.334 13.333 13.334s13.333-5.974 13.333-13.334c0-7.36-5.973-13.333-13.333-13.333zM5.333 16.305c0-.813.107-1.613.28-2.373l6.374 6.373v1.334c0 1.466 1.2 2.666 2.666 2.666v2.574c-5.24-.667-9.32-5.147-9.32-10.574zm18.52 7.2c-.346-1.08-1.333-1.866-2.533-1.866h-1.333v-4c0-.734-.6-1.334-1.334-1.334h-8v-2.666h2.667c.733 0 1.333-.6 1.333-1.334V9.638h2.667c1.467 0 2.667-1.2 2.667-2.667v-.547c3.906 1.574 6.68 5.414 6.68 9.88a10.65 10.65 0 01-2.814 7.2z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="work_history" xmlns="http://www.w3.org/2000/svg"><path d="M2.917 15.417V6.25H16.25v2.742c.6.183 1.167.45 1.667.808V6.25a1.66 1.66 0 00-1.667-1.667h-3.333V2.917A1.66 1.66 0 0011.25 1.25H7.917A1.66 1.66 0 006.25 2.917v1.666H2.917c-.925 0-1.659.742-1.659 1.667l-.008 9.167a1.66 1.66 0 001.667 1.666h6.4a5.603 5.603 0 01-.5-1.666h-5.9zm5-12.5h3.333v1.666H7.917V2.917z"/><path d="M14.583 10.417a4.168 4.168 0 00-4.166 4.166c0 2.3 1.866 4.167 4.166 4.167 2.3 0 4.167-1.867 4.167-4.167s-1.867-4.166-4.167-4.166zm1.375 6.125l-1.791-1.792v-2.667H15v2.325l1.542 1.542-.584.592z"/></symbol>
+		<symbol viewBox="0 0 20 20" id="work_outline" xmlns="http://www.w3.org/2000/svg"><path d="M11.667 5.417V3.75H8.333v1.667h3.334zm-8.334 2.5v7.5c0 .458.375.833.834.833h11.666a.836.836 0 00.834-.833v-7.5a.836.836 0 00-.834-.834H4.167a.836.836 0 00-.834.834zm13.334-2.5a1.66 1.66 0 011.666 1.666v9.167a1.66 1.66 0 01-1.666 1.667H3.333a1.66 1.66 0 01-1.666-1.667l.008-9.167c0-.925.733-1.666 1.658-1.666h3.334V3.75a1.66 1.66 0 011.666-1.667h3.334a1.66 1.66 0 011.666 1.667v1.667h3.334z"/></symbol>
 </svg>
 
 <!--
@@ -137,6 +175,39 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>Message</h2>
+				</li>
+				<li title="access_time">
+					<div class="icon-box">
+						
+						<!-- access_time -->
+						<svg class="svg-access_time-icon">
+							<use xlink:href="#access_time"></use>
+						</svg>
+						
+					</div>
+					<h2>access_time</h2>
+				</li>
+				<li title="bar_chart">
+					<div class="icon-box">
+						
+						<!-- bar_chart -->
+						<svg class="svg-bar_chart-icon">
+							<use xlink:href="#bar_chart"></use>
+						</svg>
+						
+					</div>
+					<h2>bar_chart</h2>
+				</li>
+				<li title="bolt">
+					<div class="icon-box">
+						
+						<!-- bolt -->
+						<svg class="svg-bolt-icon">
+							<use xlink:href="#bolt"></use>
+						</svg>
+						
+					</div>
+					<h2>bolt</h2>
 				</li>
 				<li title="bookmark">
 					<div class="icon-box">
@@ -215,6 +286,50 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>currency_exchange</h2>
 				</li>
+				<li title="diversity_1">
+					<div class="icon-box">
+						
+						<!-- diversity_1 -->
+						<svg class="svg-diversity_1-icon">
+							<use xlink:href="#diversity_1"></use>
+						</svg>
+						
+					</div>
+					<h2>diversity_1</h2>
+				</li>
+				<li title="download">
+					<div class="icon-box">
+						
+						<!-- download -->
+						<svg class="svg-download-icon">
+							<use xlink:href="#download"></use>
+						</svg>
+						
+					</div>
+					<h2>download</h2>
+				</li>
+				<li title="edit">
+					<div class="icon-box">
+						
+						<!-- edit -->
+						<svg class="svg-edit-icon">
+							<use xlink:href="#edit"></use>
+						</svg>
+						
+					</div>
+					<h2>edit</h2>
+				</li>
+				<li title="edit_calendar">
+					<div class="icon-box">
+						
+						<!-- edit_calendar -->
+						<svg class="svg-edit_calendar-icon">
+							<use xlink:href="#edit_calendar"></use>
+						</svg>
+						
+					</div>
+					<h2>edit_calendar</h2>
+				</li>
 				<li title="gpp_good">
 					<div class="icon-box">
 						
@@ -259,6 +374,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>loan</h2>
 				</li>
+				<li title="local_atm">
+					<div class="icon-box">
+						
+						<!-- local_atm -->
+						<svg class="svg-local_atm-icon">
+							<use xlink:href="#local_atm"></use>
+						</svg>
+						
+					</div>
+					<h2>local_atm</h2>
+				</li>
 				<li title="location">
 					<div class="icon-box">
 						
@@ -269,6 +395,39 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>location</h2>
+				</li>
+				<li title="moving">
+					<div class="icon-box">
+						
+						<!-- moving -->
+						<svg class="svg-moving-icon">
+							<use xlink:href="#moving"></use>
+						</svg>
+						
+					</div>
+					<h2>moving</h2>
+				</li>
+				<li title="next">
+					<div class="icon-box">
+						
+						<!-- next -->
+						<svg class="svg-next-icon">
+							<use xlink:href="#next"></use>
+						</svg>
+						
+					</div>
+					<h2>next</h2>
+				</li>
+				<li title="not_listed_location">
+					<div class="icon-box">
+						
+						<!-- not_listed_location -->
+						<svg class="svg-not_listed_location-icon">
+							<use xlink:href="#not_listed_location"></use>
+						</svg>
+						
+					</div>
+					<h2>not_listed_location</h2>
 				</li>
 				<li title="office">
 					<div class="icon-box">
@@ -303,6 +462,28 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>phone</h2>
 				</li>
+				<li title="plus">
+					<div class="icon-box">
+						
+						<!-- plus -->
+						<svg class="svg-plus-icon">
+							<use xlink:href="#plus"></use>
+						</svg>
+						
+					</div>
+					<h2>plus</h2>
+				</li>
+				<li title="prev">
+					<div class="icon-box">
+						
+						<!-- prev -->
+						<svg class="svg-prev-icon">
+							<use xlink:href="#prev"></use>
+						</svg>
+						
+					</div>
+					<h2>prev</h2>
+				</li>
 				<li title="right">
 					<div class="icon-box">
 						
@@ -325,6 +506,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>search</h2>
 				</li>
+				<li title="share">
+					<div class="icon-box">
+						
+						<!-- share -->
+						<svg class="svg-share-icon">
+							<use xlink:href="#share"></use>
+						</svg>
+						
+					</div>
+					<h2>share</h2>
+				</li>
 				<li title="signpost">
 					<div class="icon-box">
 						
@@ -335,6 +527,28 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>signpost</h2>
+				</li>
+				<li title="support_agent">
+					<div class="icon-box">
+						
+						<!-- support_agent -->
+						<svg class="svg-support_agent-icon">
+							<use xlink:href="#support_agent"></use>
+						</svg>
+						
+					</div>
+					<h2>support_agent</h2>
+				</li>
+				<li title="travel_explore">
+					<div class="icon-box">
+						
+						<!-- travel_explore -->
+						<svg class="svg-travel_explore-icon">
+							<use xlink:href="#travel_explore"></use>
+						</svg>
+						
+					</div>
+					<h2>travel_explore</h2>
 				</li>
 				<li title="user">
 					<div class="icon-box">
@@ -358,6 +572,17 @@ embedded above. They may be styled via CSS.
 					</div>
 					<h2>visibility_off</h2>
 				</li>
+				<li title="visibility_on">
+					<div class="icon-box">
+						
+						<!-- visibility_on -->
+						<svg class="svg-visibility_on-icon">
+							<use xlink:href="#visibility_on"></use>
+						</svg>
+						
+					</div>
+					<h2>visibility_on</h2>
+				</li>
 				<li title="web">
 					<div class="icon-box">
 						
@@ -368,6 +593,28 @@ embedded above. They may be styled via CSS.
 						
 					</div>
 					<h2>web</h2>
+				</li>
+				<li title="work_history">
+					<div class="icon-box">
+						
+						<!-- work_history -->
+						<svg class="svg-work_history-icon">
+							<use xlink:href="#work_history"></use>
+						</svg>
+						
+					</div>
+					<h2>work_history</h2>
+				</li>
+				<li title="work_outline">
+					<div class="icon-box">
+						
+						<!-- work_outline -->
+						<svg class="svg-work_outline-icon">
+							<use xlink:href="#work_outline"></use>
+						</svg>
+						
+					</div>
+					<h2>work_outline</h2>
 				</li>
 			</ul>
 
@@ -411,6 +658,39 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>Message</h2>
+				</li>
+				<li title="access_time">
+					<div class="icon-box">
+						
+						<!-- access_time -->
+						<svg class="svg-access_time-icon">
+							<use xlink:href="icon.svg#access_time"></use>
+						</svg>
+						
+					</div>
+					<h2>access_time</h2>
+				</li>
+				<li title="bar_chart">
+					<div class="icon-box">
+						
+						<!-- bar_chart -->
+						<svg class="svg-bar_chart-icon">
+							<use xlink:href="icon.svg#bar_chart"></use>
+						</svg>
+						
+					</div>
+					<h2>bar_chart</h2>
+				</li>
+				<li title="bolt">
+					<div class="icon-box">
+						
+						<!-- bolt -->
+						<svg class="svg-bolt-icon">
+							<use xlink:href="icon.svg#bolt"></use>
+						</svg>
+						
+					</div>
+					<h2>bolt</h2>
 				</li>
 				<li title="bookmark">
 					<div class="icon-box">
@@ -489,6 +769,50 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>currency_exchange</h2>
 				</li>
+				<li title="diversity_1">
+					<div class="icon-box">
+						
+						<!-- diversity_1 -->
+						<svg class="svg-diversity_1-icon">
+							<use xlink:href="icon.svg#diversity_1"></use>
+						</svg>
+						
+					</div>
+					<h2>diversity_1</h2>
+				</li>
+				<li title="download">
+					<div class="icon-box">
+						
+						<!-- download -->
+						<svg class="svg-download-icon">
+							<use xlink:href="icon.svg#download"></use>
+						</svg>
+						
+					</div>
+					<h2>download</h2>
+				</li>
+				<li title="edit">
+					<div class="icon-box">
+						
+						<!-- edit -->
+						<svg class="svg-edit-icon">
+							<use xlink:href="icon.svg#edit"></use>
+						</svg>
+						
+					</div>
+					<h2>edit</h2>
+				</li>
+				<li title="edit_calendar">
+					<div class="icon-box">
+						
+						<!-- edit_calendar -->
+						<svg class="svg-edit_calendar-icon">
+							<use xlink:href="icon.svg#edit_calendar"></use>
+						</svg>
+						
+					</div>
+					<h2>edit_calendar</h2>
+				</li>
 				<li title="gpp_good">
 					<div class="icon-box">
 						
@@ -533,6 +857,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>loan</h2>
 				</li>
+				<li title="local_atm">
+					<div class="icon-box">
+						
+						<!-- local_atm -->
+						<svg class="svg-local_atm-icon">
+							<use xlink:href="icon.svg#local_atm"></use>
+						</svg>
+						
+					</div>
+					<h2>local_atm</h2>
+				</li>
 				<li title="location">
 					<div class="icon-box">
 						
@@ -543,6 +878,39 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>location</h2>
+				</li>
+				<li title="moving">
+					<div class="icon-box">
+						
+						<!-- moving -->
+						<svg class="svg-moving-icon">
+							<use xlink:href="icon.svg#moving"></use>
+						</svg>
+						
+					</div>
+					<h2>moving</h2>
+				</li>
+				<li title="next">
+					<div class="icon-box">
+						
+						<!-- next -->
+						<svg class="svg-next-icon">
+							<use xlink:href="icon.svg#next"></use>
+						</svg>
+						
+					</div>
+					<h2>next</h2>
+				</li>
+				<li title="not_listed_location">
+					<div class="icon-box">
+						
+						<!-- not_listed_location -->
+						<svg class="svg-not_listed_location-icon">
+							<use xlink:href="icon.svg#not_listed_location"></use>
+						</svg>
+						
+					</div>
+					<h2>not_listed_location</h2>
 				</li>
 				<li title="office">
 					<div class="icon-box">
@@ -577,6 +945,28 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>phone</h2>
 				</li>
+				<li title="plus">
+					<div class="icon-box">
+						
+						<!-- plus -->
+						<svg class="svg-plus-icon">
+							<use xlink:href="icon.svg#plus"></use>
+						</svg>
+						
+					</div>
+					<h2>plus</h2>
+				</li>
+				<li title="prev">
+					<div class="icon-box">
+						
+						<!-- prev -->
+						<svg class="svg-prev-icon">
+							<use xlink:href="icon.svg#prev"></use>
+						</svg>
+						
+					</div>
+					<h2>prev</h2>
+				</li>
 				<li title="right">
 					<div class="icon-box">
 						
@@ -599,6 +989,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>search</h2>
 				</li>
+				<li title="share">
+					<div class="icon-box">
+						
+						<!-- share -->
+						<svg class="svg-share-icon">
+							<use xlink:href="icon.svg#share"></use>
+						</svg>
+						
+					</div>
+					<h2>share</h2>
+				</li>
 				<li title="signpost">
 					<div class="icon-box">
 						
@@ -609,6 +1010,28 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 						
 					</div>
 					<h2>signpost</h2>
+				</li>
+				<li title="support_agent">
+					<div class="icon-box">
+						
+						<!-- support_agent -->
+						<svg class="svg-support_agent-icon">
+							<use xlink:href="icon.svg#support_agent"></use>
+						</svg>
+						
+					</div>
+					<h2>support_agent</h2>
+				</li>
+				<li title="travel_explore">
+					<div class="icon-box">
+						
+						<!-- travel_explore -->
+						<svg class="svg-travel_explore-icon">
+							<use xlink:href="icon.svg#travel_explore"></use>
+						</svg>
+						
+					</div>
+					<h2>travel_explore</h2>
 				</li>
 				<li title="user">
 					<div class="icon-box">
@@ -632,6 +1055,17 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>visibility_off</h2>
 				</li>
+				<li title="visibility_on">
+					<div class="icon-box">
+						
+						<!-- visibility_on -->
+						<svg class="svg-visibility_on-icon">
+							<use xlink:href="icon.svg#visibility_on"></use>
+						</svg>
+						
+					</div>
+					<h2>visibility_on</h2>
+				</li>
 				<li title="web">
 					<div class="icon-box">
 						
@@ -643,6 +1077,28 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 					</div>
 					<h2>web</h2>
 				</li>
+				<li title="work_history">
+					<div class="icon-box">
+						
+						<!-- work_history -->
+						<svg class="svg-work_history-icon">
+							<use xlink:href="icon.svg#work_history"></use>
+						</svg>
+						
+					</div>
+					<h2>work_history</h2>
+				</li>
+				<li title="work_outline">
+					<div class="icon-box">
+						
+						<!-- work_outline -->
+						<svg class="svg-work_outline-icon">
+							<use xlink:href="icon.svg#work_outline"></use>
+						</svg>
+						
+					</div>
+					<h2>work_outline</h2>
+				</li>
 			</ul>
 
 <!--
@@ -651,7 +1107,7 @@ SVG sprite. They may be styled via CSS. (IE 9-11 with polyfill only)
 
 		</section>
 		<footer>
-			<p>Generated at Thu, 02 Nov 2023 01:40:34 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
+			<p>Generated at Sun, 05 Nov 2023 02:16:20 GMT by <a href="https://github.com/jkphl/svg-sprite" target="_blank">svg-sprite</a>.</p>
 		</footer>
 	</body>
 </html>

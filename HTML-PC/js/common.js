@@ -88,7 +88,7 @@
         });
 
         $(".toggle-password").click(function() {
-            $(this).toggleClass("fa-eye fa-eye-slash");
+            $(this).toggleClass("on");
             var input = $($(this).attr("toggle"));
             if (input.attr("type") == "password") {
                 input.attr("type", "text");
@@ -97,7 +97,19 @@
             }
         });
 
-
+        $('.form-search input[name="keyword"]').on('keyup', (e) => {
+            let query = $(e.currentTarget).val();
+            if (query.length) {
+                $(e.currentTarget).parents('.form-search').addClass('active');
+                return;
+            } else {
+                $(e.currentTarget).parents('.form-search').removeClass('active');
+                return;
+            }
+        });
+        $('.form-search .btn_reset').click(function() {
+            $('.form-search').removeClass("active");
+        });
     }
 
 
@@ -112,13 +124,13 @@
                 delay: 4000,
             },
         });
-        var swiperJob = new Swiper(".list-job .swiper-container", {
+        var swiperJobcolum = new Swiper(".job-slide-column .swiper-container", {
             slidesPerView: 4,
             slidesPerColumn: 2,
-            spaceBetween: 20,
+            spaceBetween: 16,
             navigation: {
-                nextEl: '.list-job .swiper-button-next',
-                prevEl: '.list-job .swiper-button-prev',
+                nextEl: '.job-slide-column .swiper-button-next',
+                prevEl: '.job-slide-column .swiper-button-prev',
             },
             breakpoints: {
                 1199: {
@@ -130,7 +142,6 @@
                 414: {
                     slidesPerView: 1.2,
                     slidesPerColumn: 1,
-                    spaceBetween: 16
                 }
             }
         });
@@ -151,7 +162,6 @@
                 },
                 414: {
                     slidesPerView: 1.2,
-                    spaceBetween: 16
                 }
             }
         });
@@ -163,9 +173,31 @@
                 clickable: true,
             },
         });
-        
+        var swiperJobrow = new Swiper(".job-slide-row .swiper-container", {
+            slidesPerView: 4,
+            spaceBetween: 16,
+            navigation: {
+                nextEl: '.job-slide-row .swiper-button-next',
+                prevEl: '.job-slide-row .swiper-button-prev',
+            },
+            breakpoints: {
+                1199: {
+                    slidesPerView: 3,
+                },
+                991: {
+                    slidesPerView: 2,
+                },
+                414: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 16
+                }
+            }
+        });
     }
 
+    function onSelect2() {
+        $(".select2").select2();
+    }
 
     $(function() {
         AOS.init();
@@ -173,5 +205,6 @@
         scrollBar();
         onCLick();
         swiper();
+        onSelect2();
     });
 })(jQuery);
