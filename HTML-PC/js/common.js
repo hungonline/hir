@@ -61,12 +61,18 @@
     function onCLick() {
 
         $('.vibeji-ham').off('click').on('click', function() {
-            $('.vibeji-ham').removeClass('open');
-            $(this).toggleClass('open');
-            $('.main-menu,.overlay').toggleClass('open');
-            $('body').css('overflow', $(this).hasClass('open') ? 'hidden' : '')
+            $('.main-menu,.overlay').addClass('open');
+            $('html').css('overflow', 'hidden');
         });
-
+        $('.close-menu').off('click').on('click', function() {
+            $('.main-menu,.overlay').removeClass('open');
+            $('html').css('overflow', 'visible');
+        });
+        $('.overlay').click(function() {
+            $('.main-menu,.overlay,.vibeji-ham').removeClass('open');
+            $('html').css('overflow', 'visible');
+        });
+        
         $('.sub_menu').click(function() {
             if ($(this).next('.level2').css('display') == 'none') {
                 $(this).html('-');
@@ -74,10 +80,6 @@
                 $(this).html('+');
             };
             $(this).next('.level2').slideToggle("slow", function() {});
-        });
-
-        $('.overlay').click(function() {
-            $('.main-menu,.overlay,.vibeji-ham').removeClass('open');
         });
 
         $('.btn-top-ctv').off('click').on('click', function() {

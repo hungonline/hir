@@ -34,8 +34,8 @@
         }
     }
     .vibeji-ham {
-        width: 25px;
-        height: 20px;
+        width: 35px;
+        height: 35px;
         position: absolute;
         right: 15px;
         top: 22px;
@@ -44,45 +44,10 @@
         cursor: pointer;
         display: none;
         margin-right: 0 !important;
-        span {
-            display: block;
-            position: absolute;
-            height: 3px;
-            width: 100%;
-            background: #17677B;
-            border-radius: 2px;
-            opacity: 1;
-            right: 0;
-            transform: rotate(0);
-            transition: .25s ease-in-out;
-            &:nth-child(1) {
-                top: 0;
-            }
-            &:nth-child(2) {
-                top: 7px;
-            }
-            &:nth-child(3) {
-                top: 14px;
-            }
-        }
-        &.open {
-            span {
-                &:nth-child(1) {
-                    top: 9px;
-                    width: 100%;
-                    transform: rotate(135deg);
-                }
-                &:nth-child(2) {
-                    opacity: 0;
-                    right: -30px;
-                    width: 100%;
-                }
-                &:nth-child(3) {
-                    top: 9px;
-                    width: 100%;
-                    transform: rotate(-135deg);
-                }
-            }
+        svg{
+            color: #17677B;
+            width: 35px;
+            height: 35px;
         }
     }
     .flex_right {
@@ -260,8 +225,8 @@
             display: block;
         }
         .vibeji-ham {
-            span {
-                background: #fff;
+            svg{
+                color: #fff;
             }
         }
         .main-menu .nav>li .link {
@@ -332,7 +297,6 @@
         }
         .vibeji-ham {
             display: block;
-            top: 30px;
         }
         .main-menu {
             position: fixed;
@@ -399,7 +363,7 @@
                     .link {
                         display: block;
                         width: 100%;
-                        padding: 0 24px;
+                        padding: 0 16px;
                         position: relative;
                         border-radius: 0;
                         color: #A9A9A9!important;
@@ -414,7 +378,7 @@
                         width: 100%;
                         align-items: center;
                         border-bottom: 1px solid #E9E9E9;
-                        padding: 16px 24px 16px 24px;
+                        padding: 16px;
                         margin-bottom: 20px;
                         img {
                             width: 145px;
@@ -425,31 +389,17 @@
                         .logo-dark {
                             display: block;
                         }
-                        .vibeji-ham {
-                            position: static;
-                            span {
-                                background: #17677B;
-                                &:nth-child(1) {
-                                    top: 9px;
-                                    width: 100%;
-                                    transform: rotate(135deg);
-                                }
-                                &:nth-child(2) {
-                                    opacity: 0;
-                                    right: 0px;
-                                    width: 100%;
-                                }
-                                &:nth-child(3) {
-                                    top: 9px;
-                                    width: 100%;
-                                    transform: rotate(-135deg);
-                                }
+                        .close-menu {
+                            color: #17677B;
+                            svg{
+                                width: 35px;
+                                height: 35px;
                             }
                         }
                     }
                     &.btn-mobile {
                         display: block;
-                        padding: 0 24px;
+                        padding: 0 16px;
                         .btn-default {
                             width: 100%;
                             margin-top: 10px;
