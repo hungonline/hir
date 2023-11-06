@@ -84,6 +84,9 @@
                         color: #229CBA;
                     }
                 }
+                .close-menu{
+                    display: none;
+                }
                 .sub_menu {
                     position: relative;
                     font-size: 0;
@@ -391,6 +394,7 @@
                         }
                         .close-menu {
                             color: #17677B;
+                            display: block;
                             svg{
                                 width: 35px;
                                 height: 35px;

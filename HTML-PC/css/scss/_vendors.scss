@@ -1,6 +1,9 @@
 // Select2
 .select2-container {
     font-size: 20px;
+    @media (max-width: 1280px) {
+        font-size: 16px;
+    }
 }
 
 .select2-container:focus-visible {
@@ -17,7 +20,7 @@
 }
 
 .select2-container--default .select2-selection--single .select2-selection__arrow {
-    height: 52px;
+    height: 50px;
     display: flex;
     align-items: center;
     right: 0;
@@ -41,9 +44,9 @@
 }
 
 .select2-container--default .select2-selection--single .select2-selection__rendered {
-    line-height: 52px;
+    line-height: 50px;
     padding-left: 12px;
-    padding-right: 60px;
+    padding-right: 45px;
     color: #CACACA;
     i {
         font-size: 16px;

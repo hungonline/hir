@@ -100,8 +100,8 @@
             <div class="des">Lorem ipsum dolor sit amet consectetur. In cursus quis quisque pharetra. Non nec venenatis tortor enim dui. Sed tellus in quam ne</div>
         </div>
     </div>
-    <div class="box-search-job">
-        <form class="form-search mb16">
+    <div class="box-search-job mb16">
+        <form class="form-search">
             <input type="search" class="input_search search_material" name="keyword" autocomplete="off" value="" placeholder="Tìm công ty" onfocus="this.placeholder=''" onblur="this.placeholder='Tìm công ty'">
             <button type="submit" class="icon_seach_web">
                 <svg class="icon-svg">
@@ -132,7 +132,7 @@
                 </div>
             </div>
         </form>
-        <div class="select-address">
+        <div class="select-address d-none d-lg-block">
             <select class="select2" name="" style="width: 100%;">
                 <option value="">Toàn quốc</option>
                 <option value="">Thành phố Hà Nội</option>
@@ -140,7 +140,7 @@
                 <option value="">Đà Nẵng</option>
             </select>
         </div>
-        <div class="select-address">
+        <div class="select-address d-none d-lg-block">
             <select class="select2" name="" style="width: 100%;">
                 <option value="">Lĩnh vực</option>
                 <option value="">Thành phố Hà Nội</option>
@@ -149,8 +149,16 @@
             </select>
         </div>
         <a class="btn-default btn-search">Tìm kiếm</a>
+        <a class="btn-fillter d-block d-lg-none off">
+            <svg class="icon-svg big svg-on">
+                <use xlink:href="images/icons/icon.svg#filter_alt"></use>
+            </svg>
+            <svg class="icon-svg big svg-off">
+                <use xlink:href="images/icons/icon.svg#filter_alt_off"></use>
+            </svg>
+        </a>
     </div>
-    <div class="fillter-tag flex align-center color-gray mb30">
+    <div class="fillter-tag flex align-center color-gray mb40">
         <span class="mb8 me-2">Đề xuất:</span>
         <div class="tab-default">
             <a class="active" href="#">Development</a>
@@ -166,12 +174,14 @@
     <div class="list-job job-slide-row mb60">
         <div class="head-title mb10">
             <h2 class="title-cate">Top Công ty nổi bật</h2>
-            <div class="control-slide">
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
+            <div class="d-none d-sm-block">
+                <div class="control-slide">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
             </div>
         </div>
-        <div class="swiper-container mb40">
+        <div class="swiper-container mb20">
             <div class="swiper-wrapper">
                 <div class="swiper-slide item company">
                     <div class="warp">
@@ -348,6 +358,12 @@
                         </svg>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="d-block d-sm-none">
+            <div class="control-slide">
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
             </div>
         </div>
     </div>

@@ -509,6 +509,16 @@ body.open-ctv {
             }
         }
     }
+    @media (max-width: 991px) {
+        .grid__4{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    @media (max-width: 576px) {
+        .grid__4{
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
 }
 
 .list-job-vertical {
@@ -1196,24 +1206,6 @@ body.open-ctv {
             display: block;
         }
     }
-    &__min {
-        width: 100%;
-        margin-bottom: 16px;
-        .input_search {
-            background: #fff;
-        }
-        .icon_seach_web {
-            background: #fff;
-            color: #222;
-            svg {
-                width: 20px;
-                height: 20px;
-            }
-        }
-        .btn_reset {
-            right: 45px;
-        }
-    }
     .loadding-new {
         text-align: center;
         &::before,
@@ -1266,6 +1258,17 @@ body.open-ctv {
             transform: scale(1);
         }
     }
+    @media (max-width: 1280px) {
+        .input_search{
+            font-size: 16px;
+        }
+        .icon_seach_web {
+            svg{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
 }
 
 .box-search-job {
@@ -1295,10 +1298,10 @@ body.open-ctv {
             }
         }
         .select2-container--default .select2-selection--single .select2-selection__rendered {
-            line-height: 60px;
+            line-height: 58px;
         }
         .select2-container--default .select2-selection--single .select2-selection__arrow {
-            height: 60px;
+            height: 58px;
         }
     }
     .btn-search {
@@ -1327,8 +1330,7 @@ body.open-ctv {
             }
         }
     }
-    @media (max-width: 991px) {
-        flex-wrap: wrap;
+    @media (max-width: 1280px) {
         .form-search {
             .input_search {
                 height: 52px;
@@ -1338,12 +1340,33 @@ body.open-ctv {
             }
         }
         .select-address {
+            width: 210px;
+            .select2-container {
+                .select2-selection--single {
+                    height: 52px;
+                    background-size: 24px;
+                }
+            }
+            .select2-container--default .select2-selection--single .select2-selection__rendered {
+                line-height: 50px;
+                padding-left: 5px;
+            }
+            .select2-container--default .select2-selection--single .select2-selection__arrow {
+                height: 50px;
+            }
+        }
+        .btn-search {
+            height: 52px;
+        }
+    }
+    @media (max-width: 991px) {
+        flex-wrap: wrap;
+        .select-address {
             width: 200px;
         }
         .btn-search {
             width: calc(100% - 68px);
             padding: 0 10px;
-            height: 52px;
         }
     }
 }
@@ -1413,28 +1436,51 @@ body.open-ctv {
             border-bottom: 0;
         }
     }
-    .pin-btn-job {
-        border-top: 1px solid #E9E9E9;
-        background: #fff;
-        padding: 32px;
-        position: sticky;
-        bottom: 0;
-        text-align: center;
-        .gioi-thieu {
-            width: 100%;
-        }
-        .ung-tuyen {
-            width: 300px;
-            flex-shrink: 0;
+    @media (max-width: 991px) {
+        .padding-line {
+            padding: 15px;
+            .txt_24 {
+                font-size: 20px!important;
+                margin-bottom: 10px!important;
+            }
         }
     }
+    @media (max-width: 576px) {
+        box-shadow: none;
+    }
+}
+.pin-btn-job {
+    border-top: 1px solid #E9E9E9;
+    background: #fff;
+    padding: 32px;
+    position: sticky;
+    bottom: 0;
+    text-align: center;
+
+    .flexbox{
+        column-gap: 16px;
+        row-gap: 16px;
+    }
+    .gioi-thieu {
+        width: 100%;
+    }
+    .ung-tuyen {
+        width: 300px;
+        flex-shrink: 0;
+    }
     @media (max-width: 991px) {
-        .padding-line,
-        .pin-btn-job {
-            padding: 15px;
+        padding: 15px;
+    }
+    @media (max-width: 767px) {
+        .flexbox{
+            flex-wrap: wrap;
+        }
+        .ung-tuyen{
+            width: 100%;
         }
     }
 }
+
 
 .info-company {
     .job-cty {
@@ -1478,6 +1524,16 @@ body.open-ctv {
                 margin-right: 20px;
             }
         }
+        @media (max-width: 576px) {
+            flex-wrap: wrap;
+            .logo{
+                max-width: 200px;
+                margin: 0 auto 15px;
+                display: block;
+                width: 100%;
+                padding: 0;
+            }
+        }
     }
 }
 
@@ -1505,6 +1561,22 @@ body.open-ctv {
             width: 150px;
             height: fit-content;
         }
+    }
+    @media (max-width: 991px) {
+        .logo{
+            width: 90px;
+            height: 90px;
+            padding: 10px;
+            bottom: -45px;
+        }
+    }
+    @media (max-width: 576px) {
+       margin-top: -30px;
+       margin-left: -15px;
+       margin-right: -15px;
+       .img-banner{
+        border-radius: 0;
+       }
     }
 }
 
@@ -1542,6 +1614,40 @@ body.open-ctv {
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 0;
+        }
+        @media (max-width: 1280px) {
+            .job-cty-item{
+                .name{
+                    font-size: 32px;
+                }
+            }
+        }
+        @media (max-width: 991px) {
+            .wrap-mobile{
+                flex-wrap: wrap;
+            }
+            .job-cty-item {
+                padding: 0;
+                position: relative;
+                padding-top: 10px;
+                flex-wrap: wrap;
+                &__left {
+                    width: 100%;
+                }
+                &__right {
+                    width: 100%;
+                    padding-left: 0;
+                }
+                .social{
+                    position: absolute;
+                    top: -40px;
+                    right: 0;
+                }
+            }
+            .col-left {
+                width: 100%;
+                padding-left: 0;
+            }
         }
     }
 }
@@ -1584,6 +1690,22 @@ body.open-ctv {
     }
     .text-post {
         max-width: 610px;
+    }
+    @media (max-width: 1310px) {
+        min-height: auto;
+        margin-bottom: 32px!important;
+        .text-post{
+            max-width: 400px;
+        }
+
+    }
+    @media (max-width: 991px) {
+        .text-post{
+            max-width: 300px;
+        }
+        .title-cate2{
+            font-size: 24px;
+        }
     }
 }
 
@@ -2087,6 +2209,9 @@ body.open-ctv {
             .form-control {
                 background: none;
                 color: #E9E9E9;
+                option{
+                    color: #222;
+                }
                 &::-ms-input-placeholder {
                     color: #E9E9E9;
                 }

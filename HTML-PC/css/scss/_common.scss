@@ -823,6 +823,16 @@ input[type="search"] {
                 height: 24px;
             }
         }
+        @media (max-width: 991px) {
+            a{
+                width: 32px;
+                height: 32px;
+                svg{
+                    width: 20px;
+                    width: 20px;
+                }
+            }
+        }
     }
     @media (max-width: 767px) {
         .job-cty {
