@@ -72,7 +72,7 @@
             $('.main-menu,.overlay,.vibeji-ham').removeClass('open');
             $('html').css('overflow', 'visible');
         });
-        
+
         $('.sub_menu').click(function() {
             if ($(this).next('.level2').css('display') == 'none') {
                 $(this).html('-');
@@ -219,13 +219,27 @@
         });
 
         var slideCauchuyen = new Swiper('.section-cauchuyen .swiper-container', {
-            slidesPerView: 1,
-            navigation: {
-                nextEl: '.section-cauchuyen .swiper-button-next',
-                prevEl: '.section-cauchuyen .swiper-button-prev',
+            speed: 500,
+            effect: 'fade',
+            autoplay: {
+                delay: 7000,
+                disableOnInteraction: false,
             },
             pagination: {
                 el: ".section-cauchuyen .swiper-pagination",
+                clickable: true,
+            }
+        });
+
+        var slideGiaiphap = new Swiper('.giaiphap-employer .swiper-container', {
+            speed: 500,
+            effect: 'fade',
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".giaiphap-employer .swiper-pagination",
                 clickable: true,
             }
         });

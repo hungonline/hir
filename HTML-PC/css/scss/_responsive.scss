@@ -48,6 +48,9 @@
     .overflow {
         overflow: hidden;
     }
+    .mb150 {
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 991px) {
@@ -86,7 +89,7 @@
 }
 
 @media (max-width: 575px) {
-    .xs-mt0{
+    .xs-mt0 {
         margin-top: 0!important;
     }
     .hidden-mb {
