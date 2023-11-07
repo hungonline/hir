@@ -208,6 +208,9 @@ input[type="search"] {
     display: grid;
     width: 100%;
     position: relative;
+    .article-itemt{
+        margin-bottom: 0;
+    }
     &__1 {
         grid-template-columns: repeat(1, 1fr);
     }
@@ -442,7 +445,7 @@ input[type="search"] {
     &.white {
         color: #fff;
     }
-    @media (max-width: 1310px) {
+    @media (max-width: 1339px) {
         font-size: px_to_rem(32px);
     }
 }
@@ -452,7 +455,7 @@ input[type="search"] {
     font-weight: 700;
     margin-bottom: 20px;
     color: #17677B;
-    @media (max-width: 1310px) {
+    @media (max-width: 1339px) {
         font-size: px_to_rem(32px);
     }
 }
@@ -462,6 +465,9 @@ input[type="search"] {
     font-weight: 700;
     margin-bottom: 10px;
     color: #17677B;
+    @media (max-width: 1339px) {
+        font-size: px_to_rem(24px);
+    }
 }
 
 .head-title {
@@ -472,6 +478,11 @@ input[type="search"] {
     .view-all {
         color: #19C9E8;
         margin-bottom: 10px;
+    }
+    @media (max-width: 1339px) {
+        .view-all{
+            font-size: 14px;
+        }
     }
 }
 
@@ -635,19 +646,43 @@ input[type="search"] {
             }
         }
     }
-    @media (max-width: 1310px) {
+    @media (max-width: 1339px) {
         &.center {
             .title_new {
                 font-size: 24px;
             }
         }
     }
-    @media (max-width: 576px) {
-        .article-thumb {
-            width: 160px;
+    @media (max-width: 991px) {
+        &.in-content {
+            .article-content{
+                position: static;
+                padding: 15px;
+                .title_new{
+                    color: #2C3131;
+                    font-size: 24px;
+                }
+            }
         }
-        .article-content {
-            width: calc(100% - 160px);
+        &.full {
+            .title_new {
+                font-size: 20px;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        .thumb_3x1{
+            padding-bottom: 55%;
+        }
+        &.in-content {
+            margin-left: -15px;
+            margin-right: -15px;
+            .article-thumb{
+                .thumb_img {
+                    border-radius: 0;
+                }
+            }
+
         }
         &.center {
             .article-thumb {
@@ -846,13 +881,11 @@ input[type="search"] {
             }
         }
     }
-    @media (max-width: 576px) {
+    @media (max-width: 575px) {
         flex-wrap: wrap;
-        .job-cty {
-            margin-bottom: 15px;
-        }
         .social {
             width: 100%;
+            margin-top: 10px;
         }
     }
 }

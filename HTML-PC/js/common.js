@@ -85,8 +85,12 @@
         $('.btn-top-ctv').off('click').on('click', function() {
             $('body').toggleClass('open-ctv');
         });
+        $('.btn-login-employer,.btn-resign-employer').off('click').on('click', function() {
+            $('body').toggleClass('open-employe');
+        });
         $('.back-home').off('click').on('click', function() {
             $('body').removeClass('open-ctv');
+            $('body').removeClass('open-employe');
         });
 
         $(".toggle-password").click(function() {
@@ -114,7 +118,8 @@
         });
 
         $(".btn-fillter").click(function() {
-            $(this).toggleClass("off");
+            $(this).toggleClass("on");
+            $('.fillter-select').toggleClass("open");
         });
     }
 
@@ -199,6 +204,33 @@
                 }
             }
         });
+
+        var slideHoatdong = new Swiper('.list-gallery .swiper-container', {
+            spaceBetween: 16,
+            slidesPerView: 1.2,
+            navigation: {
+                nextEl: '.list-gallery .swiper-button-next',
+                prevEl: '.list-gallery .swiper-button-prev',
+            },
+            pagination: {
+                el: ".list-gallery .swiper-pagination",
+                type: "fraction",
+            },
+        });
+
+        var slideCauchuyen = new Swiper('.section-cauchuyen .swiper-container', {
+            slidesPerView: 1,
+            navigation: {
+                nextEl: '.section-cauchuyen .swiper-button-next',
+                prevEl: '.section-cauchuyen .swiper-button-prev',
+            },
+            pagination: {
+                el: ".section-cauchuyen .swiper-pagination",
+                clickable: true,
+            }
+        });
+
+
     }
 
     function onSelect2() {
