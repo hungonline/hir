@@ -32,9 +32,11 @@
 @media (max-width: 1110px) {
     .container-right {
         padding-left: 15px;
+        padding-right: 15px
     }
     .container-left {
-        padding-right: 15px;
+        padding-left: 15px;
+        padding-right: 15px
     }
 }
 
