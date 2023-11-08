@@ -78,7 +78,7 @@
         }
     }
     .bg-btn {
-        background: url(images/graphics/bg-btn.png);
+        background: url(images/graphics/bg-btn.png) top 6px center;
         background-size: cover;
         position: absolute;
         width: 100%;
@@ -97,6 +97,7 @@
         height: 60px;
         align-items: center;
         padding: 0 30px;
+        padding-top: 6px;
         background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='21' height='21' viewBox='0 0 21 21' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cg clip-path='url(%23clip0_1_851)'%3e%3cpath d='M14.1706 3.40143C13.9348 3.17373 13.619 3.04774 13.2913 3.05058C12.9636 3.05343 12.65 3.18489 12.4183 3.41665C12.1865 3.64841 12.0551 3.96193 12.0522 4.28968C12.0494 4.61742 12.1754 4.93317 12.4031 5.16893L16.5193 9.28518H2.0368C1.70528 9.28518 1.38734 9.41687 1.15292 9.65129C0.9185 9.88571 0.786804 10.2037 0.786804 10.5352C0.786804 10.8667 0.9185 11.1846 1.15292 11.4191C1.38734 11.6535 1.70528 11.7852 2.0368 11.7852H16.5193L12.4031 15.9014C12.2837 16.0167 12.1884 16.1547 12.1229 16.3072C12.0574 16.4597 12.0229 16.6237 12.0215 16.7897C12.02 16.9557 12.0517 17.1202 12.1145 17.2739C12.1774 17.4275 12.2702 17.5671 12.3876 17.6844C12.5049 17.8018 12.6445 17.8946 12.7981 17.9575C12.9517 18.0203 13.1163 18.0519 13.2823 18.0505C13.4483 18.049 13.6123 18.0146 13.7648 17.9491C13.9173 17.8835 14.0552 17.7883 14.1706 17.6689L20.4206 11.4189C20.6549 11.1845 20.7865 10.8666 20.7865 10.5352C20.7865 10.2037 20.6549 9.88584 20.4206 9.65143L14.1706 3.40143Z' fill='white'/%3e%3c/g%3e%3cdefs%3e%3cclipPath id='clip0_1_851'%3e%3crect width='20' height='20' fill='white' transform='translate(0.786804 0.535156)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e");
         background-repeat: no-repeat;
         background-position: right 30px center;
@@ -212,9 +213,14 @@
     @media (max-width: 600px) {
         background: url(images/graphics/m_bg-top.jpg) bottom right;
         min-height: 100vh;
+        background-size: cover;
         &__right {
+            .scroll-height {
+                padding-left: 15px;
+            }
             .top-ctv {
                 background: url(images/graphics/m_bg-ctv.png) no-repeat center top;
+                background-size: cover;
                 height: 515px;
                 width: 476px;
                 margin: 0 auto;
@@ -242,21 +248,17 @@
     @media (max-width: 480px) {
         &__right {
             background: url(images/graphics/m_bg-top.jpg) bottom right;
-            .top-ctv {
-                width: 100%;
-                margin-left: 5px;
-                .list-ctv {
-                    padding: 0 47px;
-                }
+            .scroll-height {
+                padding-left: 0;
+                overflow-x: hidden;
             }
-        }
-    }
-    @media (max-width: 380px) {
-        &__right {
             .top-ctv {
-                margin-left: 10px;
+                width: calc(100% + 15px);
                 .list-ctv {
-                    padding: 0 25px 0 15px;
+                    padding: 0;
+                    max-width: 340px;
+                    margin: 0 auto;
+                    padding-right: 10px;
                 }
             }
         }
@@ -1920,17 +1922,19 @@ body.open-ctv {
         }
     }
 }
-.slide-article{
+
+.slide-article {
     margin: -8px;
-    .swiper-slide{
+    .swiper-slide {
         padding: 8px;
     }
     @media (max-width: 575px) {
-        .page{
+        .page {
             display: none;
         }
     }
 }
+
 .list-article-small {
     .article-itemt {
         &:last-child {
