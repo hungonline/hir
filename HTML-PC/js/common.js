@@ -243,6 +243,55 @@
                 clickable: true,
             }
         });
+        var slideArticle = new Swiper('.slide-1 .swiper-container', {
+            speed: 700,
+            navigation: {
+                nextEl: '.slide-1 .swiper-button-next',
+                prevEl: '.slide-1 .swiper-button-prev',
+            },
+            pagination: {
+                el: ".slide-1 .swiper-pagination",
+                type: "fraction",
+            },
+        });
+        var slideArticle2 = new Swiper('.slide-2 .swiper-container', {
+            speed: 700,
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            navigation: {
+                nextEl: '.slide-2 .swiper-button-next',
+                prevEl: '.slide-2 .swiper-button-prev',
+            },
+            pagination: {
+                el: ".slide-2 .swiper-pagination",
+                type: "fraction",
+            },
+            breakpoints: {
+                414: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                }
+            }
+        });
+        var slideArticle3 = new Swiper('.slide-3 .swiper-container', {
+            speed: 700,
+            slidesPerView: 2,
+            slidesPerColumn: 2,
+            navigation: {
+                nextEl: '.slide-3 .swiper-button-next',
+                prevEl: '.slide-3 .swiper-button-prev',
+            },
+            pagination: {
+                el: ".slide-3 .swiper-pagination",
+                type: "fraction",
+            },
+            breakpoints: {
+                414: {
+                    slidesPerView: 1,
+                    slidesPerColumn: 1,
+                }
+            }
+        });
 
 
     }
